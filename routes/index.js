@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var LoginController = require('../controllers/LoginControllers')
+var LoginController = require('../controllers/LoginControllers');
+var ProdutoController = require('../controllers/ProdutoController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,10 +9,9 @@ router.get('/', function(req, res, next) {
 });
 
 /* login page */
-router.get('/login', LoginController.index)
+router.get('/login', LoginController.index);
 
-
-
-
+/* Descrição do produto - page */
+router.get('/produto', ProdutoController.index);
 
 module.exports = router;
