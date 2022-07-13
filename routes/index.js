@@ -5,7 +5,7 @@ var ProdutoController = require('../controllers/ProdutoController');
 var CadastreSeController = require('../controllers/CadastreSeController');
 var EnderecoController = require('../controllers/EnderecoController');
 var CarrinhoPasso1Controller = require('../controllers/CarrinhoPasso1Controller');
-
+var CarrinhoPasso2Controller = require('../controllers/CarrinhoPasso2Controller');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Livraria Martin' });
@@ -27,5 +27,8 @@ router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
 router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
+
+/* Página: Carrinho - Passo 2*/
+router.get('/carrinhoPasso2', CarrinhoPasso2Controller.index);
 
 module.exports = router;
