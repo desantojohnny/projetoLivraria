@@ -15,5 +15,7 @@ router.get('/login', LoginController.index);
 /* Descrição do produto - page */
 router.get('/produto', ProdutoController.index);
 
+/* Descrição do produto - page */
+router.get('/cadastrese', CadastreSeController.index);
 
 module.exports = router;
