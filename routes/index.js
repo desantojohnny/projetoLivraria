@@ -8,6 +8,7 @@ var CarrinhoPasso1Controller = require('../controllers/CarrinhoPasso1Controller'
 var CarrinhoPasso2Controller = require('../controllers/CarrinhoPasso2Controller');
 var CarrinhoPasso3Controller = require('../controllers/CarrinhoPasso3Controller');
 var CarrinhoPasso4Controller = require('../controllers/CarrinhoPasso4Controller');
+var PedidoFinalizadoController = require('../controllers/PedidoFinalizadoController');
 
 
 
@@ -41,5 +42,8 @@ router.get('/carrinhoPasso3', CarrinhoPasso3Controller.index);
 
 /* Página: Carrinho - Passo 4*/
 router.get('/carrinhoPasso4', CarrinhoPasso4Controller.index);
+
+/* Página: Pedido Finalizado*/
+router.get('/pedidoFinalizado', PedidoFinalizadoController.index);
 
 module.exports = router;
