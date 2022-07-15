@@ -732,11 +732,12 @@ section {
 /* FIM */
 
 
-/* PAGIINA CADASTRE-SE */
+/* PAGIINA CADASTRE-SE ......................................................*/
+
 /* FORM CADASTRO - LINE 1*/
-.box-login {
+.box-cadastro {
     display: flex;
-    border: lightgrey 1px solid;
+    /* border: lightgrey 1px solid; */
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -744,60 +745,38 @@ section {
     padding-bottom: 80px;
 }
 
-.login {
+.cadastro {
 
     display: flex;
-    border: lightgray 1px solid;
+    /* border: lightgray 1px solid; */
     background-color: #ffffff;
     justify-content: center;
     padding: 40px 40px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
-.titulo-form {
+.titulo-form-cadastro {
+    font-size: 25px;
+    color: #37966F;
+    font:bolder;
+    font-weight: 900;
+}
+
+.input-text-cadastro {
     font-size: 22px;
 }
 
-.input-text {
-    font-size: 22px;
-}
-
-.input-email {
+.input-text-cadastro-campo {
     width: 300px;
     height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; 
     font-size: 14px;
+    box-shadow: 2px 2px 2px rgba(157, 155, 155, 0.2);
+    border-style: solid;
 }
 
-.btn-entrar {
-    background-color: #37966F;
-    color: #ffffff;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    width: 250px;
-}
-
-.input-esqueceu-1 {
-
-    font-size: 17px;
-    font-style: oblique;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-
-}
-
-/* FORM CADASTRE-SE - LINE 2*/
-
-.input-esqueceu {
-    font-size: 22px;
-    font-style: initial;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.btn-cadastre-se {
-    display: flex;
+.btn-cadastre-se-cadastro {
+    display:flexbox;
     justify-content: center;
     border-radius: 15px;
     background-color: #FD5523;
@@ -805,10 +784,23 @@ section {
     margin: 10px 10px;
     padding: 10px 10px;
     width: 250px;
+    border-style:none;
+    
+
+}
+.btn-cadastre-se-cadastro:hover {
+    background: #37966F;
+
 
 }
 
-/* FIM */
+.cadastro label{
+    display:flex;
+}
+
+
+
+/* FIM  .........................................................................*/
 
 
 
