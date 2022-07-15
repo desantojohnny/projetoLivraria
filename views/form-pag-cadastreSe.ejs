@@ -12,8 +12,16 @@
                     <label for="sobrenome" class="input-text-cadastro">Sobrenome*</label>
                     <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required ><br>
 
+                    <label for="genero" class="input-text-cadastro">Gênero*</label>
+                    <select name="genero" id="genero" class="input-text-cadastro-campo" required>
+                        <option selected disabled>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select> 
+
                     <label for="email" class="input-text-cadastro">E-mail*</label>
-                    <input type="email" name="email" id="email" class="input-text-cadastro-campo" required
+                    <input type="email" name="email" id="email" class="input-text-cadastro-campo" required 
                     placeholder="seuemail@email.com.br"><br>
 
                     <label for="confirmeseuemail" class="input-text-cadastro">Confirmar E-mail*</label>
@@ -76,7 +84,7 @@
                         <option value="SP">São Paulo</option>
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
-                    </select><br><br>
+                    </select><br>
 
                     <label for="cep" class="input-text-cadastro">CEP*</label>
                     <input type="number" name="cep" id="cep" class="input-text-cadastro-campo" required ><br>

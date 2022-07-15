@@ -785,6 +785,8 @@ section {
     padding: 10px 10px;
     width: 250px;
     border-style:none;
+    transition: 0.1s;
+    cursor: pointer;
     
 
 }
@@ -796,6 +798,10 @@ section {
 
 .cadastro label{
     display:flex;
+}
+
+div {
+    width: 300 px;
 }
 
 
