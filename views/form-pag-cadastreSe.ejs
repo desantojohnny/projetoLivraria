@@ -27,7 +27,7 @@
                     <input type="password" name="confirmesuasenha" id="confirmesuasenha" class="input-email" required><br><br>
 
                     <label for="telephone" class="input-number">Telefone*</label>
-                    <input type="number" name="telephone" id="telephone" class="input-number" required ><br><br>
+                    <input type="tel" name="telephone" id="telephone" class="input-number" required ><br><br>
                     
                     <label for="cpf" class="input-number">CPF*</label>
                     <input type="number" name="cpf" id="cpf" class="input-number" required ><br><br>
@@ -47,7 +47,39 @@
                     <input type="text" name="cidade" id="cidade" class="input-text" required ><br><br>
 
                     <label for="estado" class="input-text">Estado*</label>
-                    <input type="text" name="estado" id="estado" class="input-text" required ><br><br>
+                    <select name="estado" id="estado">
+                        <option selected disabled>Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceara</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br><br>
+
+                    <label for="cep" class="input-cep">CEP*</label>
+                    <input type="number" name="cep" id="cep" class="input-number" required ><br><br>
 
 
                     <button type="submit" class="btn-cadastre-se">CADASTRE-SE</button>
