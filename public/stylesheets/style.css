@@ -130,6 +130,7 @@ body {
     padding: 5 10px;
     transition: 1.5s;
     line-height: 63px;
+    margin: 0 100px;
 }
 
 /* #img-search{
@@ -141,6 +142,10 @@ body {
     cursor: pointer;
     z-index: 2;
 } */
+
+.menu-central{
+    background-color: violet;
+}
 
 #login,
 #login-1,
@@ -214,9 +219,6 @@ span {
 #menu-central-text,
 #menu-esquerda-text {
     display: flex;
-    width: auto;
-    font-size: 14px;
-    gap: 50px;
 }
 
 .destaque-menu-central{
@@ -233,6 +235,12 @@ span {
 .hamb-menu {
     display: flex;
     gap: 20px;
+}
+
+.icon-menu-facebook{
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase; 
 }
 
 
@@ -820,12 +828,20 @@ section {
 
 .line-promocao {
     display: flex;
-    gap: 40px;
+    width: auto;
+    height: 70px;
+    gap: 20px;
+    /* padding: 30px 30px; */
+    font-size: 14px;
+    font-family: sans-serif;
+    color:#000000;
     justify-content: space-between;
-    padding: 30px 30px;
-    font-size: 26px;
-    font-family: roboto;
-    font-weight: bolder;
+    margin: 0px 120px;
+    background-color: #ffffff;
+}
+
+.menu-promo-01{
+    display: inline-block;
 }
 
 /* FIM */
@@ -929,6 +945,11 @@ section {
 
 /* FOOTER */
 
+.container-promocao{
+    background-color: #ffffff;
+    padding: 0 40px;
+}
+
 footer {
     background-color: #37966F;
     padding: 2em 0;
@@ -969,20 +990,21 @@ footer li {
 
 .footer-box1 {
     width: 20.5%;
-    padding: -3%;
+    /* padding: -3%; */
     float: left;
 }
 
 .footer-box2 {
     width: 20%;
-    padding: -3%;
+    /* padding: -3%; */
     float: left;
 }
 
 .footer-box3 {
     width: 22.5%;
-    padding: -3%;
+    /* padding: -3%; */
     float: left;
+    font-size: 12px;
 }
 
 footer .wrapper:after {
@@ -1059,6 +1081,15 @@ footer .wrapper:after {
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* POLITIC DE PRIVACIDADE E COOKIES */
