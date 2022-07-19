@@ -1,62 +1,97 @@
-<!-- LOGIN-->
+<!-- CADASTRO-->
 <section>
-    <div class="box-login">
+    <div class="box-cadastro">
         <!-- <p class="titulo">LOGIN</p><br> -->
-        <div class="login">
+        <div class="cadastro">
             <form>
-                <label class="titulo-form">DADOS PESSOAIS</label><br><br>
+                <label class="titulo-form-cadastro">DADOS PESSOAIS</label><br><br>
 
-                    <label for="nome" class="input-text">Nome*</label>
-                    <input type="text" name="nome" id="nome" class="input-text" required ><br><br>
+                    <label for="nome" class="input-text-cadastro">Nome*</label>
+                    <input type="text" name="nome" id="nome" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="sobrenome" class="input-text">Sobrenome*</label>
-                    <input type="text" name="sobrenome" id="sobrenome" class="input-text" required ><br><br>
+                    <label for="sobrenome" class="input-text-cadastro">Sobrenome*</label>
+                    <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="email" class="input-text">E-mail*</label>
-                    <input type="email" name="email" id="email" class="input-email" required
-                    placeholder="seuemail@email.com.br"><br><br>
+                    <label for="genero" class="input-text-cadastro">Gênero*</label>
+                    <select name="genero" id="genero" class="input-text-cadastro-campo" required>
+                        <option selected disabled>Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select> 
 
-                    <label for="confirmeseuemail" class="input-text">Confirmar E-mail*</label>
-                    <input type="confirmeseuemail" name="confirmeseuemail" id="confirmeseuemail" class="input-email" required
-                    placeholder="seuemail@email.com.br"><br><br>
+                    <label for="email" class="input-text-cadastro">E-mail*</label>
+                    <input type="email" name="email" id="email" class="input-text-cadastro-campo" required 
+                    placeholder="seuemail@email.com.br"><br>
 
-                    <label for="senha" class="input-text">Senha*</label>
-                    <input type="password" name="senha" id="senha" class="input-email" required><br><br>
+                    <label for="confirmeseuemail" class="input-text-cadastro">Confirmar E-mail*</label>
+                    <input type="confirmeseuemail" name="confirmeseuemail" id="confirmeseuemail" class="input-text-cadastro-campo" required
+                    placeholder="seuemail@email.com.br"><br>
 
-                    <label for="confirmesuasenha" class="input-text">Confirmar Senha*</label>
-                    <input type="password" name="confirmesuasenha" id="confirmesuasenha" class="input-email" required><br><br>
+                    <label for="senha" class="input-text-cadastro">Senha*</label>
+                    <input type="password" name="senha" id="senha" class="input-text-cadastro-campo" required><br>
 
-                    <label for="telephone" class="input-number">Telefone*</label>
-                    <input type="number" name="telephone" id="telephone" class="input-number" required ><br><br>
+                    <label for="confirmesuasenha" class="input-text-cadastro">Confirmar Senha*</label>
+                    <input type="password" name="confirmesuasenha" id="confirmesuasenha" class="input-text-cadastro-campo" required><br>
+
+                    <label for="telephone" class="input-text-cadastro">Telefone*</label>
+                    <input type="number" name="telephone" id="telephone" class="input-text-cadastro-campo" required ><br>
                     
-                    <label for="cpf" class="input-number">CPF*</label>
-                    <input type="number" name="cpf" id="cpf" class="input-number" required ><br><br>
+                    <label for="cpf" class="input-text-cadastro">CPF*</label>
+                    <input type="number" name="cpf" id="cpf" class="input-text-cadastro-campo" required ><br>
 
-                    <label class="titulo-form">ENDEREÇO</label><br><br>
+                    <label class="titulo-form-cadastro">ENDEREÇO</label><br>
 
-                    <label for="rua" class="input-text">Rua*</label>
-                    <input type="text" name="rua" id="rua" class="input-text" required ><br><br>
+                    <label for="rua" class="input-text-cadastro">Rua*</label>
+                    <input type="text" name="rua" id="rua" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="numero" class="input-number">Número*</label>
-                    <input type="number" name="numero" id="numero" class="input-number" required ><br><br>
+                    <label for="numero" class="input-text-cadastro">Número*</label>
+                    <input type="number" name="numero" id="numero" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="bairro" class="input-text">Bairro*</label>
-                    <input type="text" name="bairro" id="bairro" class="input-text" required ><br><br>
+                    <label for="bairro" class="input-text-cadastro">Bairro*</label>
+                    <input type="text" name="bairro" id="bairro" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="cidade" class="input-text">Cidade*</label>
-                    <input type="text" name="cidade" id="cidade" class="input-text" required ><br><br>
+                    <label for="cidade" class="input-text-cadastro">Cidade*</label>
+                    <input type="text" name="cidade" id="cidade" class="input-text-cadastro-campo" required ><br>
 
-                    <label for="estado" class="input-text">Estado*</label>
-                    <input type="text" name="estado" id="estado" class="input-text" required ><br><br>
+                    <label for="estado" class="input-text-cadastro">Estado*</label>
+                    <select name="estado" id="estado" class="input-text-cadastro-campo" required>
+                        <option selected disabled>Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceara</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select><br>
 
+                    <label for="cep" class="input-text-cadastro">CEP*</label>
+                    <input type="number" name="cep" id="cep" class="input-text-cadastro-campo" required ><br>
 
-                    <button type="submit" class="btn-cadastre-se">CADASTRE-SE</button>
+                    <button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">CADASTRE-SE</button>
 
-                    
-
-
-
-                <label class="titulo-form"></label><br><br>
+                
                 
             </form>
         </div>
