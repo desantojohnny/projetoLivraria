@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
 }
 
- header {
+header {
     background-color: #356859;
     display: table;
     text-align: center;
@@ -12,10 +12,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-} 
+}
 
 body {
-     width: 100%;
+    width: 100%;
     /*height: 70%; */
     /* font-family: sans-serif;
     font-size: 15px; */
@@ -26,12 +26,13 @@ body {
 
 
 /* LINHA AJUDA AO CLINETE --TESTE--*/
-.navegacao-central{
+.navegacao-central {
     width: 100%;
     /* height: 50%; */
 }
+
 .header-help {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,13 +76,13 @@ body {
 
 }
 
-.btn-help:hover{
+.btn-help:hover {
     background-color: #356859;
     transition: 0.10s;
     border: solid 0.5px white;
 }
 
-.header-phone{
+.header-phone {
     font-family: sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -97,7 +98,7 @@ body {
     margin: 10px 0px 20px 0px;
 }
 
-#logo{
+#logo {
     background-position: center;
     background-size: cover;
     display: flex;
@@ -106,7 +107,7 @@ body {
     top: 40px;
 }
 
-.logo-img{
+.logo-img {
     display: flex;
     width: 100%;
 }
@@ -115,7 +116,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    
+
 }
 
 .btn-busca {
@@ -143,9 +144,8 @@ body {
     z-index: 2;
 } */
 
-.menu-central{
-    background-color: violet;
-}
+/* .menu-central{
+} */
 
 #login,
 #login-1,
@@ -155,8 +155,8 @@ body {
     /* flex-direction: column; */
     padding: 6px;
     justify-content: center;
-     gap: 10px 10px;
-     /* border: 3px solid blue; */
+    gap: 10px 10px;
+    /* border: 3px solid blue; */
 }
 
 #login-text,
@@ -171,12 +171,12 @@ body {
     font-size: 14px;
     padding: 10px 10px;
 }
-#login-text-2
-{
+
+#login-text-2 {
     border: #FD5523 2px solid;
-   color: #F5F4F4;
-   font-weight: bold;
-   font-size: 14px;
+    color: #F5F4F4;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .icon-user,
@@ -188,7 +188,7 @@ body {
 
 /* BANNER */
 
-.first-banner{
+.first-banner {
     padding: 15px 5px;
     width: auto;
     height: 100%;
@@ -221,7 +221,7 @@ span {
     display: flex;
 }
 
-.destaque-menu-central{
+.destaque-menu-central {
     font-family: sans-serif;
     font-size: 14px;
     margin: 0px -2px;
@@ -237,10 +237,10 @@ span {
     gap: 20px;
 }
 
-.icon-menu-facebook{
+.icon-menu-facebook {
     font-family: sans-serif;
     font-size: 14px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 
@@ -354,8 +354,9 @@ span {
 /* BOX HOME*/
 
 .categoria {
-    background-color: pink; /*#F5F4F4 */
-  display: none;
+    background-color: pink;
+    /*#F5F4F4 */
+    display: none;
     user-select: none;
 }
 
@@ -385,7 +386,8 @@ span {
 
 }
 
- .text-box-categoria{ /*retirado SPAN */ 
+.text-box-categoria {
+    /*retirado SPAN */
     display: flex;
     align-items: center;
     padding-right: 31px;
@@ -401,8 +403,10 @@ span {
 
 /* BOX PRODT*/
 
-.container-prod{
+.container-prod {
     display: flex;
+    width: auto;
+    align-items:fit-content;
 }
 
 .box-prod-home {
@@ -410,6 +414,7 @@ span {
     font-size: 20px;
     padding: 10px 10px;
     align-items: center;
+    
 
 }
 
@@ -420,19 +425,22 @@ span {
     padding: 10px;
     gap: 10px;
     align-items: center;
+    border-radius: 10px;
 
 }
 
 .descricao {
-    font-size: 16px;
-    color: rgb(213, 12, 166);
+    /* font-size: 22px;
+    color: rgb(213, 12, 166); */
     text-align: center;
 }
 
 .autor {
-    font-size: 18px;
+    font-size: 40px;
     font-weight: bolder;
     font-style: oblique;
+    font-family: sans-serif;
+    color: #656565;
 }
 
 .titulo {
@@ -508,12 +516,15 @@ section {
 
 /*Adicionei as classes - (autor, titulo, oferta, sale) */
 .autor {
-    color: #818181;
+    color: #656565;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .titulo {
     color: black;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .oferta {
@@ -542,20 +553,50 @@ section {
 
 .buy,
 .add-carrinho {
+    border-radius: 12px;
+}
 
-    border-radius: 15px;
+.flag {
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 1px 6px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-align: center;
+}
 
+.button-buy{
+display: flex;
+padding: 3px 3px;
 }
 
 .buy {
     background-color: #FD5523;
     color: white;
-    font-size: 16px;
-    line-height: 42px;
-    width: 120px;
+    font-size: 12px;
+    line-height: 22px;
+    width: 100px;
     border-color: #FD5523;
     font-weight: bolder;
     letter-spacing: 3px;
+    padding: 0px 10px;
+    font-family: sans-serif;
+}
+
+.add-carrinho {
+    background-color: #356859;
+    color: white;
+    font-size: 12px;
+    line-height: 22px;
+    width: 80px;
+    border-color: #e0dfdf;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: sans-serif;
 }
 
 .add-carrinho {
@@ -627,7 +668,7 @@ section {
 }
 
 .titulo {
-    font-size: 42px;
+    font-size: 16px;
     margin-bottom: 30px;
     margin-top: 10px;
 
@@ -772,7 +813,7 @@ section {
 .titulo-form-cadastro {
     font-size: 25px;
     color: #37966F;
-    font:bolder;
+    font: bolder;
     font-weight: 900;
 }
 
@@ -783,14 +824,14 @@ section {
 .input-text-cadastro-campo {
     width: 300px;
     height: 30px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     font-size: 14px;
     box-shadow: 2px 2px 2px rgba(157, 155, 155, 0.2);
     border-style: solid;
 }
 
 .btn-cadastre-se-cadastro {
-    display:flexbox;
+    display: flexbox;
     justify-content: center;
     border-radius: 15px;
     background-color: #FD5523;
@@ -798,20 +839,21 @@ section {
     margin: 10px 10px;
     padding: 10px 10px;
     width: 250px;
-    border-style:none;
+    border-style: none;
     transition: 0.1s;
     cursor: pointer;
-    
+
 
 }
+
 .btn-cadastre-se-cadastro:hover {
     background: #37966F;
 
 
 }
 
-.cadastro label{
-    display:flex;
+.cadastro label {
+    display: flex;
 }
 
 div {
@@ -838,13 +880,13 @@ div {
     /* padding: 30px 30px; */
     font-size: 14px;
     font-family: sans-serif;
-    color:#000000;
+    color: #000000;
     justify-content: space-between;
     margin: 0px 120px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 
-.menu-promo-01{
+.menu-promo-01 {
     display: inline-block;
 }
 
@@ -947,9 +989,9 @@ div {
   */
 
 
-  /* AUTOR DESTAQUE */
+/* AUTOR DESTAQUE */
 
-  .box-text-autor {
+.box-text-autor {
     font-size: 20px;
     padding: 10px 10px;
     display: flex;
@@ -974,7 +1016,7 @@ div {
 
 }
 
-.name-autor{
+.name-autor {
     font-size: 18px;
     color: #000000;
     font-family: sans-serif;
@@ -983,22 +1025,22 @@ div {
     margin: 10px;
 }
 
-.autor{
+.autor {
     font-size: 13px;
     font-family: sans-serif;
-    color: #000000;
-    text-align: justify;
+    color: #656565;
+    text-align: center;
     padding: 13px 0px;
 }
 
 
 /* FOOTER */
 
-.container-promocao{
+.container-promocao {
     background-color: #ffffff;
     padding: 0 60px;
     border: #e0dfdf 2px solid;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
 
 }
 
@@ -1135,7 +1177,7 @@ footer .wrapper:after {
     padding-top: 20px;
 }
 
-h2{
+h2 {
     font-size: 15px;
     text-transform: uppercase;
     margin-block-start: 2em;
@@ -1146,7 +1188,7 @@ h2{
 
 /* POLITIC DE PRIVACIDADE E COOKIES */
 
-.box-privacidade{
+.box-privacidade {
     background-color: #818181;
     position: fixed;
     text-align: center;
@@ -1159,13 +1201,14 @@ h2{
 
 }
 
-.box-privacidade, .container{
+.box-privacidade,
+.container {
     max-width: 1600px;
     margin: auto;
 
 }
 
-.text-privacidade{
+.text-privacidade {
     color: #e0dfdf;
     display: inline-block;
     margin: 10px 0;
@@ -1173,7 +1216,8 @@ h2{
     font-family: sans-serif;
 }
 
-.botao-privacidade, .aceitar-cookies{
+.botao-privacidade,
+.aceitar-cookies {
     background-color: #818181;
     color: #ffffff;
     font-weight: 800;
