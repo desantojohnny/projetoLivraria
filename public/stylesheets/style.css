@@ -1235,13 +1235,94 @@ h2 {
 
 /* Carrinho Passo-1 */
 
+.container-Passo1{
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: 200px;
+}
+.box1P1{
+    background-color: lightgrey 1px solid;;
+  width: 800px;
+  height: 500px;
+  border: lightgrey 1px solid;
+}
+.box2P1{
+    background-color:  #356859;
+    width: 650px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1-1{
+    color: rgb(251, 251, 251);
+}
 .box3P1{
+    background-color: rgb(252, 253, 251);
+    width: 300px;
+    height: 200px;
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 30px;
 
-    background-color: #FD5523;
+}
+.box4P1{
+    background-color: gray;
+    width: 300px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
 }
 
+/* Carrinho Passo1 - Coluna2 */
 
-
-
+.box1P1-1{
+    background-color: #356859;
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 50px;
+}
+.box1P1-2{
+    display: flex;
+    width: 350px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    border: lightgrey 1px solid;
+}
+.box1P1-3{
+    border: lightgrey 1px solid; 
+    width: 350px;
+    height: 200px;
+}
+.box1P1-4{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 200px;
+}
+.box1P1-5{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 200px;
+}
+.box1P1-6{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(248, 246, 246);
+    font-weight: bolder;
+}
+.box1P1-7{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 200px;
+    text-align: center;
+}
 /* FIM Carrinho Passo-1  */
 
