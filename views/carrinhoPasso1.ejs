@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
+
 <body>
 
-  <%- include('header'); %>
-  
-    <section>
+    <%- include('header'); %>
 
-    <div class="container-Passo1">
-        <div class="box1P1">
-    
-            <div class="box2P1">
-                <h1 class="h1-1">ENDEREÇO de ENTREGA</h1>
-            </div>
+        <section class="carrinhoPasso1-section">
 
-            <div class="box3P1">
-                <ul>
-                  <li>NOME</li>
-                  <li>SOBRENOME</li>
-                  <li>RUA</li>
-                  <li>BAIRRO</li>
-                  <li>CIDADE</li>
-                  <li>ESTADO</li>
-                  <li>CEP</li>
-                </ul>
-            </div>
+            <div class="container-Passo1">
+                <div class="box1P1">
 
-            <div class="box4P1">
-                <button type="submit" class="editarP1">Editar</button>
-                <button type="submit" class="removerP1">Remover</button> 
-            </div>
-            <button type="submit" class="adicionarP1">+Adicionar um novo endereço</button>
-        </div>  
-        
-    
-<!-- ******** "Coluna-Meu carrinho" -->
-            
-    <div class="box1P1-1">
-        <div class="box1P1-A">
-            <h1 class="h1-1">MEU CARRINHO</h1>
-        </div>
+                    <div class="box2P1">
+                        <h1 class="h1-1">ENDEREÇO de ENTREGA</h1>
+                    </div>
+                    <h2>ENDEREÇO</h2>
 
-        <div class="box1P1-2">
-            <button type="submit" class="btn-passo1">Alterar CARRINHO</button>
-        </div>
+                    <div class="box3P1">
+                        
+                        <ul class="lista-p1">
+                            <li>NOME</li>
+                            <li>SOBRENOME</li>
+                            <li>RUA</li>
+                            <li>BAIRRO</li>
+                            <li>CIDADE</li>
+                            <li>ESTADO</li>
+                            <li>CEP</li>
+                        </ul>
+                    </div>
 
-        <div class="box1P1-3">
-            
-
-            <div class="textoimgP1-1">
-                <div class="imgP1-1">
-                <h2>LIVRO</h2>
+                    <div class="box4P1">
+                        <button type="submit" class="button-editarP1">Editar</button>
+                        <button type="submit" class="button-removerP1">Remover</button>
+                    </div>
+                    <button type="submit" class="button-adicionarP1">+Adicionar um novo endereço</button>
+                    <button type="submit" class="button-continuarcomprandoP1">CONTINUAR COMPRANDO</button>
                 </div>
+                <!-- ******** "Coluna-Meu carrinho" -->
+                <div class="box1P1-1">
+                    <div class="box1P1-A">
+                        <h1 class="h1-1-1">MEU CARRINHO</h1>
+                    </div>
 
-                <h3>Total em produtos</h3>
+                    <div class="box1P1-2">
+                        <button type="submit" class="btn-passo1">Alterar CARRINHO</button>
+                    </div>
 
+                    <div class="box1P1-3">
+
+
+                        <div class="textoimgP1-1">
+                            <div class="imgP1-1">
+                                <h2>LIVRO</h2>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="box1P1-4">
+                        <p class="h2-P1-4">Total em produtos</p>
+                        <p class="p-P1-4">Expresso (2 a 10 dias úteis)</p>
+                    </div>
+
+                    <div class="box1P1-5">
+                        <div class="box1P1-5-1">
+                            <p class="h1-P1-5">Total</p>
+                        </div>
+                        <div class="box1P1-5-2">
+                            <p class="p-P1-5">R$ 49,55</p>
+                        </div>
+                        
+                    </div>
+                    <div class="caixa-btn-passo1-cont">
+                        <button type="submit" class="btn-passo1-cont">CONTINUAR</button>
+                    </div>
+
+                    <div class="box1P1-6">
+                        <p class="passo1">Passo 1 - 4</p>
+                    </div>
+
+                    <div class="box1P1-7">
+                        <div class="texto-box1P1-7">
+                            <h1 class="h1-box1P1-7">Quer frete grátis?</h1>
+                            <p class="p-box1P1-7">Adicione ****** para ter frete grátis!</p>
+                            <p class="p2-box1P1-7">Confira algumas sugestões</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-
-        <div class="box1P1-4">
-            <h2>Total</h2>
-            <p>2 x R$ 140,00</p>
-            <p>Total</p>
-        </div>
-
-        <div class="box1P1-5">
-            <h1>Total</h1>
-            <h2>R$ 49,55</h2>
-            <div>
-            <button type="submit" class="btn-passo1">CONTINUAR</button>
-            </div>
-        </div>
-
-        <div class="box1P1-6A">
-            <p class="passo1">Passo 1 - 4</p>
-        </div> 
-    
-        <div class="box1P1-6">
-            <h1>Quer frete grátis?</h1>
-            <p>Adicione ****** para ter frete grátis!</p>
-            <p>Confira algumas sugestões</p>
-          </div>
-        </div> 
-      </div>
-  </section>
-        
-  <%- include('footer'); %>
+        <%- include('footer'); %>
 </body>
+
 </html>

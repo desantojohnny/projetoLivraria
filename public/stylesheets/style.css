@@ -1233,3 +1233,274 @@ h2 {
     font-size: 14px;
 
 }
+
+
+/* Carrinho Passo-1 */
+.carrinhoPasso1-section{
+    background-color: lightgrey 1px solid;
+    padding: 5px;
+    margin: 0px;  
+}
+.container-Passo1{
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    background-color: rgb(255, 255, 255) 1px solid;
+    padding: 5px;  
+}
+.box1P1{
+  background-color: rgb(255, 255, 255) 1px solid;
+  width: 550px;
+  height: 480px;
+  border: lightgrey 1px solid;
+}
+.box2P1{
+    background-color:  #356859;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1-1{
+    color: rgb(251, 251, 251);
+}
+.box3P1{
+    background-color: rgb(252, 253, 251);
+    width: 300px;
+    height: 200px;
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+.lista-p1{
+    margin-top: 25px;
+}
+.button-continuarcomprandoP1{
+    background-color:  #356859;
+    width: 300px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: rgb(251, 251, 251);
+    border-radius: 10px; 
+}
+.box4P1{
+    background-color:lightgrey 1px solid;
+    width: 300px;
+    height: 30px;
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+.button-editarP1{
+    width: 70px;
+    height: 25px;
+    margin-top: 3px;
+}
+.button-removerP1{
+    width: 70px;
+    height: 25px;
+    margin-top: 3px;
+
+}.button-adicionarP1{
+    width: 302px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: gray;
+    border: gray;
+    border-radius: 5px;
+}
+
+/* Carrinho Passo1 - Coluna2 */
+.box1P1-1{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 499px;
+}
+.box1P1-2{
+    display: flex;
+    width: 350px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+.h1-1-1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box1P1-3{
+    border: lightgrey 1px solid; 
+    width: 250px;
+    height: 100px;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box1P1-4{
+    border: none;
+    width: 350px;
+    height: 70px;
+    display:block; 
+}
+.p-P1-4{
+    margin-bottom: 50px;
+}
+.box1P1-5{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-left: none;
+    border-bottom: none;
+}
+/* .box1P1-5-2{
+    margin-right: 15px;
+    border: none;
+}
+.p-P1-5{
+    scroll-margin-left: 15px;
+    border: none;
+} */
+.caixa-btn-passo1-cont{
+    border: none;
+    width: 350px;
+    height: 35px;
+    border-top: none; 
+}
+.btn-passo1-cont{
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: #FD5523;
+    border: gray;
+    border-radius: 5px;
+    color: white;
+}
+.box1P1-6{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 20px;
+    background-color: rgb(248, 246, 246);
+    font-weight: bolder;
+    border-left: none;
+}
+.box1P1-7{
+    border: lightgrey 1px solid;
+    width: 350px;
+    height: 80px;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+}
+.texto-box1P1-7{
+    margin-top: 10px;
+}
+/* Carrinho Passo 2 */
+.box2P{
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+}
+.box2P2{
+    background-color:  white;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+.box2P-2{
+    background-color: #356859;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+.box3P1-1{
+    background-color: white;
+    width: 300px;
+    height: 30%px;
+    margin-left: 25%;
+    border: lightgrey 1px solid;
+    border-radius: 10px;
+}
+/* Carrinho Passo 3 */
+.button-continuarcomprandoP3{
+    display: inline-flex;
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: grey;
+    border: gray;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+}
+.box2P-3{
+    background-color: #356859 ;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+
+/* Carrinho Passo-4 */
+.caixa-btn-passo3-cont4{
+    background-color: rgb(175, 145, 135);
+}
+/* .box3P1-2{
+
+} */
+.button-continuarcomprandoP4{
+    background-color: #356859;
+    border: none;
+}
+
+.passo3-checkbox{
+    display: flex;
+    margin-left: 30px;
+}
+.caixa-btn-passo3-cont3{
+    border: none;
+    width: 350px;
+    height: 35px;
+    border-top: none; 
+    align-items: center;
+    margin-left: 110px;
+}
+
+
+
+/* FIM Carrinho*/
+
