@@ -1459,6 +1459,18 @@ h2 {
     border-left: none;
     border-right: none;
 }
+.passo3-checkbox{
+    display: flex;
+    margin-left: 30px;
+}
+.caixa-btn-passo3-cont3{
+    border: none;
+    width: 350px;
+    height: 35px;
+    border-top: none; 
+    align-items: center;
+    margin-left: 110px;
+}
 
 
 
