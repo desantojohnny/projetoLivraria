@@ -411,6 +411,7 @@ span {
 
 .box-prod-home {
     display: flex;
+    flex-grow: 2;
     font-size: 20px;
     padding: 10px 10px;
     align-items: center;
@@ -572,6 +573,7 @@ section {
 .button-buy{
 display: flex;
 padding: 3px 3px;
+align-items: center;
 }
 
 .buy {
