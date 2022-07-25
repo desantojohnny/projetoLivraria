@@ -1407,13 +1407,26 @@ h2 {
     margin-top: 10px;
 }
 /* Carrinho Passo 2 */
-.box2P1{
+.box2P{
     background-color: white;
     color: #000000;
     font-weight: bold;
 }
 .box2P2{
-    background-color:  #356859;
+    background-color:  white;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+}
+.box2P-2{
+    background-color: #356859;
     width: 550px;
     height: 50px;
     border: lightgrey 1px solid;
@@ -1446,19 +1459,27 @@ h2 {
     color: white;
     align-items: center;
 }
-.box2P3-3{
-    background-color:  white;
+.box2P-3{
+    background-color: #356859 ;
     width: 550px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     font-weight: bold;
     border-left: none;
     border-right: none;
 }
+
+
+
+
+
+
+
+
 .passo3-checkbox{
     display: flex;
     margin-left: 30px;
