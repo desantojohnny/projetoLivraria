@@ -1363,14 +1363,6 @@ h2 {
     border-left: none;
     border-bottom: none;
 }
-/* .box1P1-5-2{
-    margin-right: 15px;
-    border: none;
-}
-.p-P1-5{
-    scroll-margin-left: 15px;
-    border: none;
-} */
 .caixa-btn-passo1-cont{
     border: none;
     width: 350px;
@@ -1472,7 +1464,6 @@ h2 {
     border-left: none;
     border-right: none;
 }
-
 /* Carrinho Passo-4 */
 .caixa-btn-passo3-cont4{
     background-color: rgb(175, 145, 135);
@@ -1484,13 +1475,6 @@ h2 {
     background-color: #356859;
     border: none;
 }
-
-
-
-
-
-
-
 .passo3-checkbox{
     display: flex;
     margin-left: 30px;
@@ -1504,7 +1488,29 @@ h2 {
     margin-left: 110px;
 }
 
-
-
+/* Pedido Finalizado */
+.box-pedidoFinalizado{
+    padding-top: 25%;
+}
+.box1P1-CF{
+    background-color:#356859;
+    width: 550px;
+    height: 480px;
+    border: lightgrey 1px solid;
+    color: white;
+  }
+  .box1P1-pedidoFinalizado{
+    padding-top: 25px;
+  }
+  .p2-pedidoFinalizado{
+    margin-left: 5px;
+    text-align: left;
+  }
+  
+  
 /* FIM Carrinho*/
+
+.lista-p1{
+    text-align: left;
+}
 
