@@ -1254,128 +1254,144 @@ h2 {
 }
 
 
-/* Carrinho Passo-1 */
+/* Carrinho Passo 1 - Section*/
 .carrinhoPasso1-section{
-    background-color: lightgrey 1px solid;
+    background-color: rgb(211, 211, 211) 1px solid;
     padding: 5px;
     margin: 0px;  
+    justify-content: space-between;
 }
 .container-Passo1{
     height: 800px;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     margin: 5px;
-    background-color: rgb(255, 255, 255) 1px solid;
-    padding: 5px;  
+    background-color: rgb(211, 211, 211) 1px solid;
+    padding: 3%;  
 }
-.box1P1{
+ .box1P1{ /*Passo 1 - Coluna 1 "Borda" */
   background-color: rgb(255, 255, 255) 1px solid;
-  width: 550px;
+  width: 750px;
   height: 480px;
   border: lightgrey 1px solid;
 }
-.box2P1{
+.box2P1{ /*Passo 1 - Coluna 1 "Endereço de Entrega" */
     background-color:  #356859;
-    width: 550px;
+    width: 750px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.h1-1{
+.h1-1{ /*Passo 1 - Coluna 1 TÍTULO "Endereço de Entrega" */
     color: rgb(251, 251, 251);
 }
-.box3P1{
+.Sub-Título-P1C1{ /*Passo 1 - Coluna 1 SUB-TÍTULO "Endereço" */
+    font-size: large;
+}
+.box3P1{ /*Passo 1 - Coluna 1 LISTA "Dados do Cliente" - Alinhamento Texto e Caixa Branca*/
     background-color: rgb(252, 253, 251);
-    width: 300px;
+    width: 500px;
     height: 200px;
     border: lightgrey 1px solid;
     display: flex;
-    justify-content: center;
-    margin-left: 25%;
+    justify-content:center;
+    margin-left: 17%;
+    
+}
+.lista-p1{ /*Passo 1 - Coluna 1 LISTA "Dados do Cliente"  - Alinhamento do Texto*/
     margin-top: 25px;
 }
-.lista-p1{
-    margin-top: 25px;
-}
-.button-continuarcomprandoP1{
+.button-continuarcomprandoP1{/*Passo 1 - Coluna 1 BOTÃO "Continuar Comprando" */
     background-color:  #356859;
-    width: 300px;
+    width: 200px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 11%;
     color: rgb(251, 251, 251);
     border-radius: 10px; 
 }
-.box4P1{
+.box4P1{/*Passo 1 - Coluna 1 CAIXA "Botões Editar e Remover" */
     background-color:lightgrey 1px solid;
-    width: 300px;
+    width: 500px;
     height: 30px;
     border: lightgrey 1px solid;
     display: flex;
-    justify-content: space-around;
-    margin-left: 25%;
+    justify-content: space-between;
+    margin-left: 17%;
 }
-.button-editarP1{
+.button-editarP1{/*Passo 1 - Coluna 1 BOTÃO "Editar" */
     width: 70px;
     height: 25px;
     margin-top: 3px;
+    
 }
-.button-removerP1{
+.button-removerP1{/*Passo 1 - Coluna 1 BOTÃO "Remover" */
     width: 70px;
     height: 25px;
     margin-top: 3px;
 
-}.button-adicionarP1{
-    width: 302px;
+}.button-adicionarP1{/*Passo 1 - Coluna 1 BOTÃO "Adicionar" */
+    width: 500px;
     height: 25px;
     margin-top: 5px;
-    margin-left: 30px;
-    background-color: gray;
+    margin-left: 1%;
+    background-color: rgb(148, 145, 145);
     border: gray;
     border-radius: 5px;
+    color: white;
 }
 
-/* Carrinho Passo1 - Coluna2 */
-.box1P1-1{
+/* Carrinho Passo1 - Coluna 2 */
+.box1P1-1{ /* Carrinho Passo1 - Coluna 2 - "BORDA"*/
     border: lightgrey 1px solid;
     width: 350px;
-    height: 499px;
+    height: 600px;
 }
-.box1P1-2{
+.box1P1-2{  /* Carrinho Passo1 - Coluna 2 - CAIXA "Botão: Alterar meu carrinho"*/
     display: flex;
     width: 350px;
     height: 30px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;   
 }
-.h1-1-1{
+.btn-passo1{/*Passo 1 - Coluna 2 BOTÃO "Alterar Carrinho */
+    margin-left: 32%;
+    background-color: rgb(148, 145, 145);
+    border: rgb(148, 145, 145);
+    border-radius: 5px;
+    color: white;
+    height: 25px;
+}
+.h1-1-1{/*Passo 1 - Coluna 2 TÍTULO "Meu Carrinho" */ /******************************************************************/
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: large;
 }
-.box1P1-3{
+.box1P1-3{ /*Caixa - Imagem do Livro*/
     border: lightgrey 1px solid; 
-    width: 250px;
-    height: 100px;
-    margin-left: 50px;
+    width: 150px;
+    height: 200px;
+    margin-left: 28%;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: white;
 }
-.box1P1-4{
+.box1P1-4{/*Caixa - TEXTO - "Total em produtos"*/
     border: none;
     width: 350px;
     height: 70px;
     display:block; 
 }
-.p-P1-4{
+.p-P1-4{ /*Caixa - TEXTO - Expresso (2 a 10 dias úteis)*/
     margin-bottom: 50px;
 }
-.box1P1-5{
+.box1P1-5{ /*CAIXA - TEXTO: TOTAL e R$ 49,55*/
     border: lightgrey 1px solid;
     width: 350px;
     height: 50px;
@@ -1384,21 +1400,13 @@ h2 {
     border-left: none;
     border-bottom: none;
 }
-/* .box1P1-5-2{
-    margin-right: 15px;
-    border: none;
-}
-.p-P1-5{
-    scroll-margin-left: 15px;
-    border: none;
-} */
-.caixa-btn-passo1-cont{
+.caixa-btn-passo1-cont{/*CAIXA - TEXTO: TOTAL e R$ 49,55*/
     border: none;
     width: 350px;
     height: 35px;
     border-top: none; 
 }
-.btn-passo1-cont{
+.btn-passo1-cont{ /*CAIXA - BOTÃO - CONTINUAR*/
     width: 200px;
     height: 25px;
     margin-top: 5px;
@@ -1408,34 +1416,35 @@ h2 {
     border-radius: 5px;
     color: white;
 }
-.box1P1-6{
+.box1P1-6{/*CAIXA - PASSO 1 de 4*/
     border: lightgrey 1px solid;
     width: 350px;
     height: 20px;
-    background-color: rgb(248, 246, 246);
+    background-color: rgb(250, 245, 245);
     font-weight: bolder;
     border-left: none;
+    
 }
-.box1P1-7{
+.box1P1-7{ /*CAIXA - "Anúncios*/
     border: lightgrey 1px solid;
     width: 350px;
     height: 80px;
     text-align: center;
     border-top: none;
     border-left: none;
-}
-.texto-box1P1-7{
     margin-top: 10px;
 }
-/* Carrinho Passo 2 */
+
+/******************************************************************/
+/* Carrinho Passo 2 - Coluna 1*/
 .box2P{
     background-color: white;
     color: #000000;
     font-weight: bold;
 }
-.box2P2{
+.box2P2{ /*Passo 1 - Coluna 1 "Endereço de Entrega" */
     background-color:  white;
-    width: 550px;
+    width: 750px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1446,9 +1455,9 @@ h2 {
     border-left: none;
     border-right: none;
 }
-.box2P-2{
+.box2P-2{ /*Passo 1 - Coluna 1 "Forma de Envio" */
     background-color: #356859;
-    width: 550px;
+    width: 750px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1459,20 +1468,35 @@ h2 {
     border-left: none;
     border-right: none;
 }
-.box3P1-1{
+.box3P1-1{/*CAIXA - Express(2 a 10 dias úteis) R$ 9,55*/
     background-color: white;
     width: 300px;
     height: 30%px;
-    margin-left: 25%;
+    margin-left: 30%;
     border: lightgrey 1px solid;
     border-radius: 10px;
 }
+.button-continuarcomprandoP-2{/*Passo 1 - Coluna 1 BOTÃO "Continuar Comprando" */
+    background-color:  #356859;
+    width: 200px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34%;
+    color: rgb(251, 251, 251);
+    border-radius: 10px; 
+}
+
+/******************************************************************/
+
 /* Carrinho Passo 3 */
 .button-continuarcomprandoP3{
     display: inline-flex;
     width: 200px;
     height: 25px;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 10px;
     background-color: grey;
     border: gray;
@@ -1480,9 +1504,9 @@ h2 {
     color: white;
     align-items: center;
 }
-.box2P-3{
+.box2P-3{/*FORMA DE PAGAMENTO*/
     background-color: #356859 ;
-    width: 550px;
+    width: 750px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1493,11 +1517,43 @@ h2 {
     border-left: none;
     border-right: none;
 }
+ .box3P1-1-1{ /*Caixa - Botões - Forma de Pagamento*/
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    margin-left: 30%;
+    border: lightgrey 1px solid;
+    border-radius: 10px;
+}
+.caixa-btn-passo3-cont3-3{/*Termos de Uso*/
+margin-left: 1%;
+}
+.box3p-3{ /*Passo 1 - Coluna 1 "Borda" */
+    background-color: rgb(255, 255, 255) 1px solid;
+    width: 750px;
+    height: 480px;
+    border: lightgrey 1px solid;
+  }
+.button-continuarcomprandoP3-1{
+    background-color:  #356859;
+    width: 200px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    color: rgb(251, 251, 251);
+    border-radius: 10px; 
+}
+/*A "Coluna 2 do Passo 3" => Está com a configuração da "Coluna 2 Passo 2"*/
 
+/******************************************************************/
 /* Carrinho Passo-4 */
 .caixa-btn-passo3-cont4{
-    background-color: rgb(175, 145, 135);
+    background-color: rgb(191, 202, 88);
 }
+<<<<<<< HEAD
 /* .box3P1-2{
 
 } */
@@ -1506,6 +1562,20 @@ h2 {
     border: none;
 }
 
+=======
+
+.button-continuarcomprandoP4-1{
+    background-color: #356859;
+    width: 350px;
+    height: 35px;
+    color: white;
+    font-size:larger;
+    font-weight: bold;
+    border: rgb(191, 202, 88);
+    
+
+}
+>>>>>>> 6d12c2db510ff849ed4ea1cc1fa39dac2165df37
 .passo3-checkbox{
     display: flex;
     margin-left: 30px;
@@ -1518,11 +1588,52 @@ h2 {
     align-items: center;
     margin-left: 110px;
 }
-
-
-
+.button-continuarcomprandoP4-4{
+    background-color:  #356859;
+    width: 200px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13%;
+    color: rgb(251, 251, 251);
+    border-radius: 10px; 
+}
+/*A "Coluna 2 do Passo 4" => Está com a configuração da "Coluna 2 Passo 2"*/
+/******************************************************************/
+/* Pedido Finalizado */
+.box2P4-4{ /*Passo 1 - Coluna 1 "Endereço de Entrega" */
+    background-color:  #356859;
+    width: 550px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-pedidoFinalizado{
+    padding-top: 25%;
+}
+.box1P1-CF{
+    background-color:#356859;
+    width: 550px;
+    height: 480px;
+    border: lightgrey 1px solid;
+    color: white;
+  }
+  .box1P1-pedidoFinalizado{
+    padding-top: 25px;
+  }
+  .p2-pedidoFinalizado{
+    margin-left: 5px;
+    text-align: left;
+  }
+  
+  
 /* FIM Carrinho*/
 
+<<<<<<< HEAD
 /* teste de produtos em JS */
 
 #book{
@@ -1547,3 +1658,9 @@ h2 {
     padding: 0 20%;
 
 }
+=======
+.lista-p1{
+    text-align: left;
+}
+
+>>>>>>> 6d12c2db510ff849ed4ea1cc1fa39dac2165df37
