@@ -1188,6 +1188,25 @@ h2 {
     text-align: center;
 }
 
+#gototop, .text-gototop{
+    opacity: 0.5;
+    background-color: #000000;
+    color: #F5F4F4;
+    display: block;
+    position: fixed;
+    right: 10px;
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
 /* POLITIC DE PRIVACIDADE E COOKIES */
 
 .box-privacidade {
@@ -1504,3 +1523,27 @@ h2 {
 
 /* FIM Carrinho*/
 
+/* teste de produtos em JS */
+
+#book{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    background-color: #e0dfdf;
+    border: 2px solid black;
+}
+
+#carrinho{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    background-color: #e0dfdf;
+    border: 2px solid black;
+}
+
+.produto-single{
+    width: 33.33%;
+    padding: 0 20%;
+
+}

@@ -1,11 +1,103 @@
 <section>
+    
     <div class="box-home">
         Produtos em destaque
     </div>
 </section>
 
+<!-- teste de produtos em JS -->
 
-<div class="container-prod">
+<!-- <script src="/javascripts/carrinho.js"></script> -->
+
+<!-- produtos -->
+<h2>books</h2>
+<div id="book">
+
+</div>
+
+<div id="carrinho">
+<h2>Carrinho</h2> 
+</div>
+
+<script>
+    const itens =[
+    {
+        id: 0,
+        img: 'CatecismoDaIgrejaCatolicaGrande-142x214.jpeg',
+        autor: "Johnny Santo",
+        name: "Humildade e Honra",
+        oferta: "290,00",
+        sale: "199,00",
+        quantidade: 3
+    },
+    {
+        id: 1,
+        autor: "Diego T.",
+        name: "SPFC",
+        oferta: "290,00",
+        sale: "199,00",
+        quantidade: 0
+    },
+    {
+        id: 2,
+        autor: "Brian T.",
+        name: "Pequeno Principe",
+        oferta: "290,00",
+        sale: "199,00",
+        quantidade: 0
+    }
+]
+
+inicializarloja = () => {
+    var containerBook = document.getElementById('book');
+    itens.map((val) => {
+        containerBook.innerHTML+= `
+
+            <div class= "book-single"> 
+                <img src="`+val.img+`" />
+                <p> `+val.name+`</p>
+                <a key="`+val.id+`" href="#">COMPRAR></a>
+            </div>
+            `;
+    })
+}
+
+inicializarloja();
+
+atualizarcarrinho = ()=>{
+    var containerCarrinho = document.getElementById('carrinho');
+    containerCarrinho.innerHTML = "";
+    itens.map((val) => {
+        if(val.quantidade > 0){
+            containerCarrinho.innerHTML+= `
+            <p>`+val.name+` | quantidade: `+val.quantidade+` </p>
+            <hr> 
+            `
+        }
+        
+    })
+
+}
+
+var links = document.getElementsByTagName('a');
+
+for(var i = 0; i< links.length; i++){
+    links[i].addEventListener("click", function(){
+        let key = this.getAttribute('key');
+        itens[key].quantidade++;
+        atualizarcarrinho();
+        return false;
+    })
+
+}
+
+
+
+
+</script>
+
+
+<!-- <div class="container-prod">
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
@@ -27,7 +119,7 @@
             </div>
         </div>
     </section>
-<!-- PRODUTO 02 -->
+ PRODUTO 02
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
@@ -46,7 +138,7 @@
             </div>
         </div>
     </section>
-<!-- PRODUTO 03 -->
+ PRODUTO 03 
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
@@ -65,7 +157,7 @@
             </div>
         </div>
     </section>
-    <!-- PRODUTO 04 -->
+     PRODUTO 04 
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
@@ -80,12 +172,12 @@
                 </ul>
                 <div class="button-buy">
                     <button class="buy">COMPRAR</button>
-                    <!-- <button class="add-carrinho">ADICIONAR AO CARRINHO</button> -->
+                    
                 </div>
             </div>
         </div>
     </section>
-    <!-- PRODUTO 05 -->
+     PRODUTO 05
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
@@ -100,12 +192,14 @@
                 </ul>
                 <div class="button-buy">
                     <button class="buy">COMPRAR</button>
-                    <!-- <button class="add-carrinho">ADICIONAR AO CARRINHO</button> -->
+                    
                 </div>
             </div>
         </div>
     </section>
-     <!-- PRODUTO 06
+     
+    PRODUTO 06
+    
     <section class="box-prod-home">
         <div class="box-prod">
             <img src="/images/CatecismoDaIgrejaCatolicaGrande-142x214.jpeg" alt="" sizes="" srcset="">
