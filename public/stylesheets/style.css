@@ -1562,20 +1562,6 @@ margin-left: 1%;
     border: none;
 }
 
-=======
-
-.button-continuarcomprandoP4-1{
-    background-color: #356859;
-    width: 350px;
-    height: 35px;
-    color: white;
-    font-size:larger;
-    font-weight: bold;
-    border: rgb(191, 202, 88);
-    
-
-}
->>>>>>> 6d12c2db510ff849ed4ea1cc1fa39dac2165df37
 .passo3-checkbox{
     display: flex;
     margin-left: 30px;
@@ -1633,7 +1619,6 @@ margin-left: 1%;
   
 /* FIM Carrinho*/
 
-<<<<<<< HEAD
 /* teste de produtos em JS */
 
 #book{
@@ -1658,9 +1643,7 @@ margin-left: 1%;
     padding: 0 20%;
 
 }
-=======
 .lista-p1{
     text-align: left;
 }
 
->>>>>>> 6d12c2db510ff849ed4ea1cc1fa39dac2165df37
