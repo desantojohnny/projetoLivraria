@@ -3,15 +3,23 @@
     <div class="box-cadastro">
         <!-- <p class="titulo">LOGIN</p><br> -->
         <div class="cadastro">
-            <form>
+
+            <form class="formulario" id="formulario">
+<div class="header">              
                 <label class="titulo-form-cadastro">DADOS PESSOAIS</label><br><br>
+</div> 
 
+<div class="form-control">
                     <label for="nome" class="input-text-cadastro">Nome*</label>
-                    <input type="text" name="nome" id="nome" class="input-text-cadastro-campo" required ><br>
+                    <input type="text" name="nome" id="nome" class="input-text-cadastro-campo">
+                    <br>
+</div>
 
+<div class="form-control">
                     <label for="sobrenome" class="input-text-cadastro">Sobrenome*</label>
                     <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required ><br>
-
+</div>                    
+<div>
                     <label for="genero" class="input-text-cadastro">Gênero*</label>
                     <select name="genero" id="genero" class="input-text-cadastro-campo" required>
                         <option selected disabled>Selecione</option>
@@ -19,11 +27,12 @@
                         <option value="feminino">Feminino</option>
                         <option value="outro">Outro</option>
                     </select> 
-
+</div>                    
+<div class="form-control">
                     <label for="email" class="input-text-cadastro">E-mail*</label>
                     <input type="email" name="email" id="email" class="input-text-cadastro-campo" required 
                     placeholder="seuemail@email.com.br"><br>
-
+</div>
                     <label for="confirmeseuemail" class="input-text-cadastro">Confirmar E-mail*</label>
                     <input type="confirmeseuemail" name="confirmeseuemail" id="confirmeseuemail" class="input-text-cadastro-campo" required
                     placeholder="seuemail@email.com.br"><br>
@@ -96,4 +105,5 @@
             </form>
         </div>
     </div>
+    <script src="formulario.js"></script>
 </section>
