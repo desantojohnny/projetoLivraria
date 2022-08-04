@@ -4,7 +4,7 @@
         <!-- <p class="titulo">LOGIN</p><br> -->
         <div class="cadastro">
 
-            <form class="formulario" id="formulario">
+             <form action="/dadosFormularioUser" method="post" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
 <div class="header">              
                 <label class="titulo-form-cadastro">DADOS PESSOAIS</label><br><br>
 </div> 
@@ -19,7 +19,7 @@
                     <label for="sobrenome" class="input-text-cadastro">Sobrenome*</label>
                     <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required ><br>
 </div>                    
-<div>
+<!-- <div>
                     <label for="genero" class="input-text-cadastro">Gênero*</label>
                     <select name="genero" id="genero" class="input-text-cadastro-campo" required>
                         <option selected disabled>Selecione</option>
@@ -96,7 +96,7 @@
                     </select><br>
 
                     <label for="cep" class="input-text-cadastro">CEP*</label>
-                    <input type="number" name="cep" id="cep" class="input-text-cadastro-campo" required ><br>
+                    <input type="number" name="cep" id="cep" class="input-text-cadastro-campo" required ><br> -->
 
                     <button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">CADASTRE-SE</button>
 

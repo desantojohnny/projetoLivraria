@@ -1,6 +1,9 @@
+const db = require ('../database/models')
 const ProdutoController = {
-    index: (req,res) => {
-        return res.render('produto');
+    index: async function (req,res)  {
+        const books = await db.Book.findAll();
+   res.send(books)
+        // return res.render('produto');
     }
 };
 
