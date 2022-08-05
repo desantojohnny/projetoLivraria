@@ -409,15 +409,14 @@ span {
     align-items:fit-content;
 }
 
-.box-prod-home {
+/* .box-prod-home {
     display: flex;
-    flex-grow: 2;
     font-size: 20px;
     padding: 10px 10px;
     align-items: center;
     
 
-}
+} */
 
 .box-prod {
     border: #e0dfdf 2px solid;
@@ -574,7 +573,6 @@ section {
 .button-buy{
 display: flex;
 padding: 3px 3px;
-align-items: center;
 }
 
 .buy {
@@ -1192,25 +1190,6 @@ h2 {
     text-align: center;
 }
 
-#gototop, .text-gototop{
-    opacity: 0.5;
-    background-color: #000000;
-    color: #F5F4F4;
-    display: block;
-    position: fixed;
-    right: 10px;
-    z-index: 99999;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: .2s;
-    
-}
-
 /* POLITIC DE PRIVACIDADE E COOKIES */
 
 .box-privacidade {
@@ -1550,9 +1529,10 @@ margin-left: 1%;
     color: rgb(251, 251, 251);
     border-radius: 10px; 
 }
-/*A "Coluna 2 do Passo 3" => Está com a configuração da "Coluna 2 Passo 2"*/
 
+/*A "Coluna 2 do Passo 3" => Está com a configuração da "Coluna 2 Passo 2"*/
 /******************************************************************/
+
 /* Carrinho Passo-4 */
 .caixa-btn-passo3-cont4{
     background-color: rgb(191, 202, 88);
@@ -1619,20 +1599,33 @@ HEAD
     margin-left: 5px;
     text-align: left;
   }
-  
+  .lista-p1{
+    text-align: left;
+}
   
 /* FIM Carrinho*/
 
-/* teste de produtos em JS */
+/* <<<<<<< HEAD
+=======
 
-#book{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: flex;
-    background-color: #e0dfdf;
-    border: 2px solid black;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*teste de produtos em JS
 
 #carrinho{
     max-width: 100%;
