@@ -501,6 +501,7 @@ section {
 .photo-principal {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .description-book {
@@ -629,6 +630,9 @@ align-items: center;
 .item-details {
     border: 1px solid lightpink;
     padding: 2px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*LINE 4 - SUGESTÃO DE LIVRO */
