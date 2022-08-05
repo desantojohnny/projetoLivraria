@@ -1653,11 +1653,12 @@ margin-left: 1%;
 .lista-p1{
     text-align: left;
 }
+*/
 
-/* TESTE NOVO ITEM PRODUTO 05/08/22
+ /* TESTE NOVO ITEM PRODUTO 05/08/22 */
 
 .book-item--add{
-    /* display: flex;
+    display: flex;
     justify-content: center;
     width: 140px;
     height: 50px;
@@ -1747,4 +1748,4 @@ margin-left: 1%;
 
 .box-autor-destaque{
     justify-content: space-evenly;
-} */
+}
