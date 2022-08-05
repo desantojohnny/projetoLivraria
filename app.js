@@ -6,10 +6,11 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var produtoRouter = require('./routes/produto');
 
 var app = express();
 
-const db = require(__dirname + '/database/models/index.js');
+const db = require(__dirname + '/database/models/index');
 
 // view engine setup
 app.set('views', path.join(__dirname,'views')); //

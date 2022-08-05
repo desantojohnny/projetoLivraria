@@ -11,7 +11,7 @@ module.exports = function(sequelize, dataTypes) {
         payment: {
                 type: dataTypes.STRING
         },
-        date: {
+        request_date: {
             type: dataTypes.DATE
         },
         client_id: {

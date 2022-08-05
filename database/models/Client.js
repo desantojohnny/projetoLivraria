@@ -8,13 +8,13 @@ module.exports = function(sequelize, dataTypes) {
                 primaryKey: true,
                 autoIncrement: true
         },
-        name: {
+        full_name: {
                 type: dataTypes.STRING
         },
         adress: {
             type: dataTypes.STRING
         },
-        cpf: {
+        CPF: {
             type: dataTypes.STRING
         },
         email: {
@@ -25,6 +25,12 @@ module.exports = function(sequelize, dataTypes) {
         },
         bithday: {
             type: dataTypes.DATE
+        },
+        user_name: {
+            type: dataTypes.STRING
+        },
+        password: {
+            type: dataTypes.STRING
         }
     };
 

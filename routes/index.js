@@ -22,10 +22,12 @@ router.get('/', function(req, res, next) {
 router.get('/login', LoginController.index);
 
 /* Descrição do produto - page */
+<<<<<<< HEAD
 router.get('/produto/:id', ProdutoController.index);
+=======
+router.get('/produto/:id', ProdutoController.productDetail);
+>>>>>>> 597cfba9edf0552325bd8231c8345c3017268f0e
 
-/* Descrição do produto - page */
-router.get('/cadastrese', CadastreSeController.index);
 /* Página: Cadastre-se*/
 router.get('/cadastrese', CadastreSeController.index);
 

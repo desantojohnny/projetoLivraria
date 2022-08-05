@@ -500,6 +500,7 @@ section {
 .photo-principal {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .description-book {
@@ -627,6 +628,9 @@ padding: 3px 3px;
 .item-details {
     border: 1px solid lightpink;
     padding: 2px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*LINE 4 - SUGESTÃO DE LIVRO */
@@ -1533,21 +1537,7 @@ margin-left: 1%;
 .caixa-btn-passo3-cont4{
     background-color: rgb(191, 202, 88);
 }
-/* <<<<<<< HEAD */
-
-
-.button-continuarcomprandoP4-1{
-    background-color: #356859;
-    width: 350px;
-    height: 35px;
-    color: white;
-    font-size:larger;
-    font-weight: bold;
-    border: rgb(191, 202, 88);
-    
-
-}
-
+HEAD
 /* .box3P1-2{
 
 } */
@@ -1653,99 +1643,4 @@ margin-left: 1%;
 .lista-p1{
     text-align: left;
 }
-*/
 
- /* TESTE NOVO ITEM PRODUTO 05/08/22 */
-
-.book-item--add{
-    display: flex;
-    justify-content: center;
-    width: 140px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 5px;
-    background-color: #df730e;
-    text-align: center;
-    color: #FFF;
-    font-size: 22px;
-    cursor: pointer;
-    margin-top: -03px;
-        width: 120px;
-        height:50px;
-        line-height:50px;
-        border-radius:0.2px;
-        background-color:#d32f2f;
-        text-align:center;
-        color:#FFF;
-        font-size:22px;
-        cursor:pointer;
-        margin-top:5px;
-        transition:all ease .2s;
-}
-
-.BOX-PROD-2 {
-    text-align: center;
-    max-width: 250px;
-    font-family: 'Hepta Slab', Helvetica, Arial;
-    margin: 0 auto 50px auto;
-}
-
-.container-prod-2 {
-    border: #df730e solid 3px;
-}
-
-.box-book {
-    width: 200px;
-    height: 200px;
-    background-color: #eeeeee;
-    border-radius: 0.3px;
-    box-shadow: 0px 0px 0px #00000000;
-}
-
-.main-box-book {
-    display: grid;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #7b7878;
-    font-family: 'Lato', Helvetica, Arial;
-    font-size: 15px;
-    margin: 0;
-    flex-wrap: wrap;
-    align-content: center;
-
-}
-
-.book-item-price-2 {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    color: #333;
-    margin-top: 5px;
-}
-
-.book-item-titulo-2 {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-top: 5px;
-}
-
-.book-item-autor-2 {
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    color: #555;
-    margin-top: 10px;
-}
-
-.container-produtos{
-    display: flex;
-}
-
-.box-autor-destaque{
-    justify-content: space-evenly;
-}
