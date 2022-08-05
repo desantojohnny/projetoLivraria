@@ -12,7 +12,6 @@ var PedidoFinalizadoController = require('../controllers/PedidoFinalizadoControl
 const DadosFormularioUserController = require('../controllers/DadosFormularioUserController');
 
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Livraria Martin' });
