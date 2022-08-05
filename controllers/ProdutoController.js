@@ -14,6 +14,15 @@ const ProdutoController = {
              res.render("produto", {book: product})
         
     },
+    searchAllProducts: async (req, res) => {
+         
+            let products;
+
+             await db.Book.findAll().then((data)=>{
+                 products = data.dataValues;
+             });
+             res.render("conteudo-home", {book: products})
+        }
 };
 
 module.exports = ProdutoController;
@@ -24,15 +33,15 @@ show: //mostra detalhe de um produto
 create: //enviar dados para adicionar um produto  */
 
 // const ProdutoControlle = {
-//     searchAllProducts:(req, res) => {
-//         async function getBook() {
-//             let products;
-//              await Book.findAll().then((data)=>{
-//                  products = data.dataValues;
-//              });
-//              res.render("conteudo-home", {book: products})
-//         }
-//     },
+    // searchAllProducts:(req, res) => {
+    //     async function getBook() {
+    //         let products;
+    //          await Book.findAll().then((data)=>{
+    //              products = data.dataValues;
+    //          });
+    //          res.render("conteudo-home", {book: products})
+    //     }
+    // },
 //     productDetail: (req, res) => {
 //         async function getBook() {
 //             let product;
