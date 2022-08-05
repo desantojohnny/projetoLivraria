@@ -10,11 +10,10 @@ router.use(bodyParser.jason());
 
 /*Página Dados Formulário*/
 
-router.get('/'); 
-
-/* function (req, res, next){
-    // res.render('dadosFormularioUser', {title: 'Dados Formulário | Livraria Martin'});
-    res.render('Nome: '+req.body.nome+' Sobrenome: '+req.body.sobrenome)
-})   */
+router.get('/', 
+function (req, res, next){
+    res.render('dadosFormularioUser', {title: 'Dados Formulário | Livraria Martin'});
+    // res.render('Nome: '+req.body.nome+' Sobrenome: '+req.body.sobrenome)
+})  
 
 module.exports = router;

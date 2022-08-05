@@ -10,6 +10,7 @@ var CarrinhoPasso3Controller = require('../controllers/CarrinhoPasso3Controller'
 var CarrinhoPasso4Controller = require('../controllers/CarrinhoPasso4Controller');
 var PedidoFinalizadoController = require('../controllers/PedidoFinalizadoController');
 const DadosFormularioUserController = require('../controllers/DadosFormularioUserController');
+const NovaRotaController = require('../controllers/NovaRotaController');
 
 
 
@@ -49,5 +50,8 @@ router.get('/pedidoFinalizado', PedidoFinalizadoController.index);
 
 /* Página: Test Dados do Formulário*/
 router.post('/dadosFormularioUser', DadosFormularioUserController.index);
+
+/* Página: Pedido Finalizado*/
+router.get('/novaRota', NovaRotaController.index);
 
 module.exports = router;
