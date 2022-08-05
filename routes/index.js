@@ -13,7 +13,6 @@ const DadosFormularioUserController = require('../controllers/DadosFormularioUse
 const NovaRotaController = require('../controllers/NovaRotaController');
 
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Livraria Martin' });
@@ -23,7 +22,7 @@ router.get('/', function(req, res, next) {
 router.get('/login', LoginController.index);
 
 /* Descrição do produto - page */
-router.get('/produto', ProdutoController.index);
+router.get('/produto/:id', ProdutoController.index);
 
 /* Descrição do produto - page */
 router.get('/cadastrese', CadastreSeController.index);
