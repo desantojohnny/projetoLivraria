@@ -21,10 +21,8 @@ router.get('/', function(req, res, next) {
 router.get('/login', LoginController.index);
 
 /* Descrição do produto - page */
-router.get('/produto', ProdutoController.index);
+router.get('/produto/:id', ProdutoController.productDetail);
 
-/* Descrição do produto - page */
-router.get('/cadastrese', CadastreSeController.index);
 /* Página: Cadastre-se*/
 router.get('/cadastrese', CadastreSeController.index);
 

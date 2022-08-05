@@ -9,7 +9,126 @@
 </head>
 <body>
   <%- include('header'); %>
-  <%- include('descricao-prod'); %>
+  <!--  include('descricao-prod'); -->
+  <main>
+    <!-- LINE 1 - HISTORICO DE NAVEGAÇÃO-->
+    <section>
+        <p class="historico">Destaque / Livro XXX</p>
+    </section>
+
+    <!-- LINE 2 - DESCRICAO PRODUTO-->
+    <div class="description">
+        <!-- <div class="photo-left">
+            <img class="left" src="/images/sem-foto.jpeg" alt="" srcset="">
+            <img class="left" src="/images/sem-foto.jpeg" alt="" srcset="">
+            <img class="left" src="/images/sem-foto.jpeg" alt="" srcset="">
+            <img class="left" src="/images/sem-foto.jpeg" alt="" srcset="">
+        </div> -->
+        <div class="photo-principal">
+            <img src=''width="250vw;" alt="">
+        </div>
+        <div class="description-book">
+            <div class="author">
+                <h4><%= book.authors %></h4>
+            </div>
+            <div class="produt-name">
+                <h2><%= book.title %></h2>
+            </div>
+            <!-- <div class="like">
+            <a title="Adicionar a lista de desejo">8888888</a> ADICIONAR DIV PARA CORAÇÃO DE LIKE
+        </div>   -->
+            <div class="price-1">
+                <span class="price-old">De: R$<%= book.price %></span>
+                <span class="price-new">Por: R$<%=(0.9* book.price)%></span>
+                <br>
+            </div>
+            <div class="flag-desct">
+                <span>- -R$<%=(0.1* book.price)%></span>
+            </div>
+
+            <div class="button-buy">
+                <button class="buy">COMPRAR</button>
+            </div>
+            <div class="button-buy">
+                <button class="buy">COMPRAR</button>
+                <button class="add-carrinho">ADICIONAR AO CARRINHO</button>
+            </div>
+            <div class="compartilhar">
+                <spam class="title-compartilhar">Compartilhar</spam>
+                <a class="facebook" target="_blank" href="">_</a>
+
+                <a class="twitter" target="_blank" href="">_</a>
+
+
+                <a class="instagram" target="_blank" href="">_</a>
+
+
+                <a class="gplus" target="_blank" href="">_</a>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- LINE 3 - DESCRICAO PRODUTO - 2-->
+    <div class="details">
+        <div class="details-description">
+            <div class="item-details">
+                <label>Páginas</label>
+                <span><%= book.pages %></span>
+            </div>
+            <div class="item-details">
+                <label>Idioma</label>
+                <span>Português</span>
+            </div>
+            <div class="item-details">
+                <label>ISBN</label>
+                <span><%= book.ISBN %></span>
+            </div>
+            <div class="item-details">
+                <label>Medidas</label>
+                <span>16 x 23</span>
+            </div>
+            <div class="item-details">
+                <label>Editora</label>
+                <span><%= book.editora %></span>
+            </div>
+        </div>
+        <div class="sinopse">
+            <h4>
+                "Sinopse"
+                <span>HTML</span>
+            </h4>
+            <div class="resumo">
+                <p>
+                    <%= book.sinopse %>
+
+                </p>
+                <p><br><br>
+                    <strong> Sobre o autor</strong>
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ipsum error nobis in accusamus
+                    voluptatibus hic officiis corporis explicabo doloremque necessitatibus inventore minus
+                    aperiam laudantium, alias labore odio nihil fugit.
+                </p>
+                <br>
+                <br>
+                <br>
+                <b>Ficha Técnica</b>
+                <br>
+                "ISBN: <%= book.ISBN %>"
+                <br>
+                Editora: <%= book.editora %>
+                <br>
+                Dimensão: 16 x 23 cm
+                <br>
+                Páginas: <%= book.pages %>
+                <br>
+                Idioma: Português
+                <br>
+            </div>
+        </div>   
+</main>
   <%- include('sugestao-livro'); %>
   <%- include('footer'); %>
 </body>

@@ -11,11 +11,11 @@ module.exports = function(sequelize, dataTypes) {
         title: {
             type: dataTypes.STRING
         },
-        price: {
-            type: dataTypes.DOUBLE
+        release_year: {
+            type: dataTypes.DATE
         },
-        description: {
-            type: dataTypes.STRING
+        price: {
+            type: dataTypes.DECIMAL
         },
         pages: {
             type: dataTypes.INTEGER
@@ -37,6 +37,9 @@ module.exports = function(sequelize, dataTypes) {
         },
         estoque: {
             type: dataTypes.INTEGER
+        },
+        sinopse: {
+            type: dataTypes.STRING
         }
     };
 

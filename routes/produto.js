@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* PAGE PRODUTO */
-router.get('/', function (req, res, next){
+router.get('/produto/:id', function (req, res, next){
     res.render('produto', {title: 'Produto | Livraria Martin'});
 })
 
