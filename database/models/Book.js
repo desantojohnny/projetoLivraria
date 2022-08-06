@@ -38,6 +38,15 @@ module.exports = function(sequelize, dataTypes) {
         estoque: {
             type: dataTypes.INTEGER
         },
+        destaque: {
+            type: dataTypes.INTEGER
+        },
+        best: {
+            type: dataTypes.INTEGER
+        },
+        releasing: {
+            type: dataTypes.INTEGER
+        },
         sinopse: {
             type: dataTypes.STRING
         }

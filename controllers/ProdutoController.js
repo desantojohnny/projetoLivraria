@@ -1,5 +1,6 @@
 const db = require("../database/models/index");
 const { Book } = require('../database/models');
+// const { where } = require("sequelize/types");
 
 const ProdutoController = {
     index: (req,res) => {
@@ -12,7 +13,7 @@ const ProdutoController = {
              await db.Book.findByPk(id).then((data)=>{
                  product = data.dataValues;
              });
-             res.render("produto", {book: product})
+             res.render("detalhe-produto", {book: product})
         
     },
     searchAllProducts: async (req, res) => {
@@ -20,7 +21,21 @@ const ProdutoController = {
                 let books = await db.Book.findAll();
 
                 
-                return res.render("index", {books});
+                return res.render("produtos", {books});
+    },
+    searchHighlightsProducts: async (req, res) => {
+                
+        let books = await db.Book.findAll( {where:{
+            destaque: true}
+        });
+        let bests = await db.Book.findAll( {where:{
+            best: true}
+        });
+        let releasings = await db.Book.findAll( {where:{
+            releasing: true}
+        });
+        
+        return res.render("home", {books, bests, releasings});
     }
 };
 

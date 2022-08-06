@@ -14,13 +14,15 @@ const NovaRotaController = require('../controllers/NovaRotaController');
 
 
 /* GET home page. */
-router.get('/', ProdutoController.searchAllProducts);
+router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
 
-/* Descrição do produto - page */
+/* Todos os produtos - page */
+router.get('/produtos', ProdutoController.searchAllProducts);
 
+/* Descrição do produto - page */
 router.get('/produto/:id', ProdutoController.productDetail);
 
 

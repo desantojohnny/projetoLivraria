@@ -362,9 +362,17 @@ span {
 
 .box-home {
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 30px 20px 5px 20px;
+    margin-left: 60px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+.box-home-1 {
+    font-size: 25px;
+    padding: 30px 20px 5px 10px;
+    margin-left: 60px;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* BOX CATEGORIA*/
@@ -416,6 +424,15 @@ span {
     line-height: 20px;
     width: 240px;
     height: 320px;
+    justify-content: flex-start;
+}
+.box-prod-3 {
+    
+    padding: 10px 10px;
+    align-items: center;
+    line-height: 20px;
+    width: 240px;
+    height: 280px;
     justify-content: flex-start;
 }
 .book-item--add {
@@ -1008,15 +1025,18 @@ div {
 
 .box-text-autor {
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 30px 10px 5px 10px;
     display: flex;
     align-items: center;
+    margin-left: 70px;
 }
 
 .box-autor-home {
-    background-color: #ffffff;
+    background-color: #bbf1c8;
     display: flex;
-    padding: 20px;
+    justify-content: center;
+    text-align: justify;
+    padding: 40px 10px;
     gap: 20px 30px;
 }
 
@@ -1024,15 +1044,19 @@ div {
     border: #e0dfdf 2px solid;
     display: flex;
     background-color: #ffffff;
-    padding: 10px 20px;
+    width: 400px;
+    height: 320px;
+    padding: 10px 10px;
     gap: 30px 20px;
+    justify-content: center;
     align-items: center;
 }
 
 .box-autor-home1 {
-    background-color: #ffffff;
+    background-color: #bbf1c8;
     display: flex;
     flex-wrap: wrap;
+    padding: 30px 10px 100px 10px;
     gap: 20px 30px;
     justify-content: center;
 }
@@ -1050,12 +1074,52 @@ div {
     padding: 10px;
 }
 
+.box-autor-home3 {
+    background-color: #a0d4ad;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 20px 30px;
+    justify-content: space-around;
+}
+
+.box-autor-destaque3 {
+    border: #e0dfdf 2px solid;
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-autor-home4 {
+    background-color: #a0d4ad;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    gap: 20px 30px;
+    justify-content: space-around;
+}
+
+.box-autor-destaque4 {
+    border: #e0dfdf 2px solid;
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-book {
+    padding: 10px;
+}
+
 .name-autor {
     font-size: 18px;
     color: #000000;
     font-family: sans-serif;
-    padding: 13px 0px;
-    text-align: justify;
+    padding: 0px 0px;
+    text-align: center;
     margin: 10px;
 }
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+  <body>
+  <%- include('header'); %>
+  <%- include('categorias-princial'); %>
+  <%- include('banner-central'); %>
+  
+  <!-- colocar os produtos em código que ele chame conforme o cliente abre a página -->
+  
+  <section>
+    <div class="box-home">
+        <strong>Produtos em destaque</strong>
+    </div>
+  </section>
+ <!-- CONTAINER PRODUTO 01  -->
+<section class="box-autor-home3">
+    <% books.forEach(book => { %>
+    <div class="box-autor-destaque3">
+        <div class="box-prod-2" data-key="0">
+            <a href>
+                <div class="box-book">
+                    <img src="<%=book.url_image%>" alt="" height="200vw" srcset="">
+                </div>
+            </a>
+            <div class="book-item-price-2">R$<%=book.price%></div>
+            <div class="book-item-autor-2"><em><%=book.authors%></em></div>
+            <div class="book-item-titulo-2"><strong><%=book.title %></strong></div>
+            <div class="book-item--add">COMPRAR</div>
+        </div>
+    </div> <% }); %>
+</section>
+<section>
+  <div class="box-home">
+      <strong>Mais Vendidos</strong>
+  </div>
+</section>
+<section class="box-autor-home4">
+  <% bests.forEach(best => { %>
+  <div class="box-autor-destaque4">
+      <div class="box-prod-3" data-key="0">
+          <a href>
+              <div class="box-book">
+                  <img src="<%=best.url_image%>" alt="" height="150vw" srcset="">
+              </div>
+          </a>
+          <div class="book-item-price-2">R$<%=best.price%></div>
+          <div class="book-item-autor-2"><em><%=best.authors%></em></div>
+          <div class="book-item-titulo-2"><strong><%=best.title %></strong></div>
+          <div class="book-item--add">COMPRAR</div>
+      </div>
+  </div> <% }); %>
+</section>
+<section>
+  <div class="box-home">
+      <strong>Principais Lançamentos</strong>
+  </div>
+</section>
+<section class="box-autor-home3">
+  <% releasings.forEach(releasing => { %>
+  <div class="box-autor-destaque3">
+      <div class="box-prod-2" data-key="0">
+          <a href>
+              <div class="box-book">
+                  <img src="<%=releasing.url_image%>" alt="" height="200vw" srcset="">
+              </div>
+          </a>
+          <div class="book-item-price-2">R$<%=releasing.price%></div>
+          <div class="book-item-autor-2"><em><%=releasing.authors%></em></div>
+          <div class="book-item-titulo-2"><strong><%=releasing.title %></strong></div>
+          <div class="book-item--add">COMPRAR</div>
+      </div>
+  </div> <% }); %>
+</section>
+  <%- include('autores-destaque'); %>
+  <%- include('footer'); %>
+
+  
+  </body>
+</html>
