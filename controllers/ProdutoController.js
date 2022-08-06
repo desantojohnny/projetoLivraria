@@ -19,7 +19,7 @@ const ProdutoController = {
                 
                 let books = await db.Book.findAll();
 
-                console.log(books);
+                
                 return res.render("index", {books});
     }
 };

@@ -20,8 +20,6 @@ router.get('/', ProdutoController.searchAllProducts);
 router.get('/login', LoginController.index);
 
 /* Descrição do produto - page */
-HEAD
-router.get('/produto/:id', ProdutoController.index);
 
 router.get('/produto/:id', ProdutoController.productDetail);
 
