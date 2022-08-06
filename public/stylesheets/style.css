@@ -409,14 +409,25 @@ span {
     align-items:fit-content;
 }
 
-/* .box-prod-home {
-    display: flex;
-    font-size: 20px;
+.box-prod-2 {
+    
     padding: 10px 10px;
     align-items: center;
-    
-
-} */
+    line-height: 20px;
+    width: 240px;
+    height: 320px;
+    justify-content: flex-start;
+}
+.book-item--add {
+    font-size: 14px;
+}
+.book-item-autor-2 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.book-item-titulo-2 {
+    font-size: 14px;
+}
 
 .box-prod {
     border: #e0dfdf 2px solid;
@@ -1007,7 +1018,6 @@ div {
     display: flex;
     padding: 20px;
     gap: 20px 30px;
-
 }
 
 .box-autor-destaque {
@@ -1017,7 +1027,27 @@ div {
     padding: 10px 20px;
     gap: 30px 20px;
     align-items: center;
+}
 
+.box-autor-home1 {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+    justify-content: center;
+}
+
+.box-autor-destaque1 {
+    border: #e0dfdf 2px solid;
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-book {
+    padding: 10px;
 }
 
 .name-autor {

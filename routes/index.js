@@ -13,9 +13,7 @@ const DadosFormularioUserController = require('../controllers/DadosFormularioUse
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Livraria Martin' });
-});
+router.get('/', ProdutoController.searchAllProducts);
 
 /* login page */
 router.get('/login', LoginController.index);

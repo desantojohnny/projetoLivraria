@@ -1,4 +1,5 @@
 const db = require("../database/models/index");
+const { Book } = require('../database/models');
 
 const ProdutoController = {
     index: (req,res) => {
@@ -15,14 +16,12 @@ const ProdutoController = {
         
     },
     searchAllProducts: async (req, res) => {
-         
-            let products;
+                
+                let books = await db.Book.findAll();
 
-             await db.Book.findAll().then((data)=>{
-                 products = data.dataValues;
-             });
-             res.render("conteudo-home", {book: products})
-        }
+                console.log(books);
+                return res.render("index", {books});
+    }
 };
 
 module.exports = ProdutoController;
