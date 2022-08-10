@@ -10,28 +10,27 @@
 
                 <p>Se você já tem uma conta, faça login abaixo:</p><br><br>
                 
-                <div>
+                <div class="form-control">
                     <label class="titulo-form"></label><br>
-                    <label for="email" class="input-text">E-mail</label>
+                    <label for="email" class="input-text"><b>Email*: </b></label>
                     <input type="email" name="email" id="email" class="input-email" required placeholder="seuemail@email.com.br">
                     <br>
                 </div>
-                <div>
-                    <label for="senha" class="input-text">Senha</label>
+                <div class="form-control">
+                    <label for="senha" class="input-text"><b>Senha*: </b></label>
                     <input type="password" name="senha" id="senha" class="input-email" required>
                     <br><br>
                 </div>
-                <button type="submit" class="btn-entrar">ENTRAR</button>
+                <br><button type="submit" class="btn-entrar">ENTRAR</button><br><br>
+                <hr>
                 <p class="input-esqueceu-1">Esqueceu sua senha?</p>
-                    <hr>
-                <p class="input-esqueceu">Não tem cadastro?</p>
-                
+                    
             </form>
         </div>
     </div>
-</section>
-<!-- CADASTRO-->
-<section>
+        <p class="input-esqueceu">Não tem cadastro?</p>
+    
+    <!-- CADASTRO-->
     <div class="box-cadastro">
         <div class="cadastro">
             <form action="/register" method="POST" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
@@ -42,43 +41,43 @@
                 </div> 
 
                     <div class="form-control">
-                        <label for="nome" class="input-text-cadastro">Nome*</label>
+                        <label for="nome" class="input-text-cadastro">Nome*: </label>
                         <input type="text" name="nome" id="nome" class="input-text-cadastro-campo">
                         <br>
                     </div>
 
                     <div class="form-control">
-                        <label for="sobrenome" class="input-text-cadastro">Sobrenome*</label>
+                        <label for="sobrenome" class="input-text-cadastro">Sobrenome*: </label>
                         <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required >
                         <br>
                     </div>
                         
-                    <div>
-                        <label for="endereco" class="input-text-cadastro">ENDEREÇO*</label>
+                    <div class="form-control">
+                        <label for="endereco" class="input-text-cadastro">Endereço*: </label>
                         <input type="text" name="endereco" id="endereco" class="input-text-cadastro-campo" required >
                         <br>
                     </div>
 
-                    <div>
-                        <label for="cpf" class="input-text-cadastro">CPF</label>
+                    <div class="form-control">
+                        <label for="cpf" class="input-text-cadastro">CPF: </label>
                         <input type="number" name="cpf" id="cpf" class="input-text-cadastro-campo" >
                         <br>
                     </div>
 
-                    <div>
-                        <label for="telephone" class="input-text-cadastro">Telefone</label>
+                    <div class="form-control">
+                        <label for="telephone" class="input-text-cadastro">Telefone: </label>
                         <input type="number" name="telephone" id="telephone" class="input-text-cadastro-campo">
                         <br>
                     </div>
                   
                     <div class="form-control">
-                        <label for="email" class="input-text-cadastro">E-mail*</label>
+                        <label for="email" class="input-text-cadastro">Email*: </label>
                         <input type="email" name="email" id="email" class="input-text-cadastro-campo" required placeholder="seuemail@email.com.br">
                         <br>
                     </div>
 
-                    <div>
-                        <label for="senha" class="input-text-cadastro">Senha*</label>
+                    <div class="form-control">
+                        <label for="senha" class="input-text-cadastro">Senha*: </label>
                         <input type="password" name="senha" id="senha" class="input-text-cadastro-campo" required>
                         <br>
                     </div>
@@ -89,4 +88,3 @@
     </div>
     <script src="formulario.js"></script>
 </section>
-<%- include('footer'); %>

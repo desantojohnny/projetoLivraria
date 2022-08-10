@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-
+<body>
 
     
     <main>
@@ -90,3 +90,53 @@
                 </nav>
             </header>
     </main>
+   
+    <section>
+        <div class="box-cadastro1">
+            <div class="cadastro">
+                <form action="/register" method="POST" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
+                    <h1 class="header1">Olá <%= client.first_name %>!</h1>
+                    <br>
+                    <p class="header1">Seja bem vindo! Esta é a página do seu perfil</p></h4><br><br>
+                    <div class="header">              
+                        <label class="titulo-form-cadastro">SEUS DADOS PESSOAIS: </label><br><br>
+                    </div> 
+
+                        <div class="form-control">
+                            <label for="nome" class="input-text-cadastro1"><b>Nome: </b></label>
+                            <label for="nome" class="input-text-cadastro1"><i><%= client.first_name %>.</i></label>
+                            <br>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="sobrenome" class="input-text-cadastro1"><b>Sobrenome: </b></label>
+                            <label for="sobrenome" class="input-text-cadastro1"><i><%= client.last_name %>.</i></label>
+                            <br>
+                        </div>
+                            
+                        <div class="form-control">
+                            <label for="endereco" class="input-text-cadastro1"><b>Endereço: </b></label>
+                            <label for="endereco" class="input-text-cadastro1"><i><%= client.adress %>.</i></label>
+                            <br>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="cpf" class="input-text-cadastro1"><b>CPF: </b></label>
+                            <label for="cpf" class="input-text-cadastro1"><i><%= client.CPF %>.</i></label>
+                            <br>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email" class="input-text-cadastro1"><b>Email: </b></label><br>
+                            <label for="email" class="input-text-cadastro1"><i><%=client.email_login %></i></label>
+                            <br>
+                        </div>
+                    
+                        <a href="/user/index/<%= client.id %>"><button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">Editar</button></a>
+                        <a href="/user/delete/<%= client.id %>"><button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">Excluir</button></a>
+                </form>
+            </div>
+        </div>
+        <script src="formulario.js"></script>
+    </section>
+</body>
