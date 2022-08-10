@@ -26,7 +26,7 @@
         <div class="box-prod-2" data-key="0">
             <a href>
                 <div class="box-book">
-                    <img src="<%=book.url_image%>" alt="" height="200vw" srcset="">
+                    <a href="/produto/<%= book.id %>"><img src="<%=book.url_image%>" alt="" height="200vw" srcset=""></a>
                 </div>
             </a>
             <div class="book-item-price-2">R$<%=book.price%></div>
@@ -47,7 +47,7 @@
       <div class="box-prod-3" data-key="0">
           <a href>
               <div class="box-book">
-                  <img src="<%=best.url_image%>" alt="" height="150vw" srcset="">
+                <a href="/produto/<%= best.id %>"><img src="<%=best.url_image%>" alt="" height="150vw" srcset=""></a>
               </div>
           </a>
           <div class="book-item-price-2">R$<%=best.price%></div>
@@ -68,7 +68,7 @@
       <div class="box-prod-2" data-key="0">
           <a href>
               <div class="box-book">
-                  <img src="<%=releasing.url_image%>" alt="" height="200vw" srcset="">
+                <a href="/produto/<%= releasing.id %>"><img src="<%=releasing.url_image%>" alt="" height="200vw" srcset=""></a>
               </div>
           </a>
           <div class="book-item-price-2">R$<%=releasing.price%></div>

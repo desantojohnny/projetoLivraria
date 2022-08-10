@@ -18,6 +18,8 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
+router.post('/login', LoginController.store);
+
 
 /* Todos os produtos - page */
 router.get('/produtos', ProdutoController.searchAllProducts);
@@ -34,7 +36,7 @@ router.get('/register', LoginController.index);
 router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
-router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
+// router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
 
 /* Página: Carrinho - Passo 2*/
 router.get('/carrinhoPasso2', CarrinhoPasso2Controller.index);
