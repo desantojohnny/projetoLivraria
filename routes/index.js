@@ -27,6 +27,7 @@ router.get('/produto/:id', ProdutoController.productDetail);
 
 
 /* Página: Cadastre-se*/
+router.post('/cadastrese', CadastreSeController.cadastro);
 router.get('/cadastrese', CadastreSeController.index);
 
 /* Página: Endereço*/

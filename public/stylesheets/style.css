@@ -748,8 +748,8 @@ padding: 3px 3px;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    /* padding-bottom: 80px; */
 }
 
 .login {
@@ -824,12 +824,12 @@ padding: 3px 3px;
 /* FORM CADASTRO - LINE 1*/
 .box-cadastro {
     display: flex;
-    /* border: lightgrey 1px solid; */
+    border: lightgrey 1px solid;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    /* padding-bottom: 80px; */
 }
 
 .cadastro {
@@ -841,6 +841,7 @@ padding: 3px 3px;
     padding: 40px 40px;
     /* margin-bottom: 40px; */
 }
+
 
 .titulo-form-cadastro {
     font-size: 25px;
@@ -884,8 +885,8 @@ padding: 3px 3px;
 
 }
 
-.cadastro label {
-    display: flex;
+/* .cadastro label {
+    display: flex; */
 }
 
 div {
