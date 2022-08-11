@@ -32,7 +32,18 @@
             <div class="book-item-price-2">R$<%=book.price%></div>
             <div class="book-item-autor-2"><em><%=book.authors%></em></div>
             <div class="book-item-titulo-2"><strong><%=book.title %></strong></div>
-            <div class="book-item--add">COMPRAR</div>
+            <div class="button-buy">
+              <button class="buy">COMPRAR</button>
+          </div>
+          <!-- Inserido os botões Adicionar ou Remover do CARRINHO -->
+          <div>
+            <button class="add-carrinho-">+</button>
+          </div>
+          <br>
+          <div>
+            <button class="add-carrinho-">-</button>
+          </div>
+            <!-- <div class="book-item--add">COMPRAR</div> -->
         </div>
     </div> <% }); %>
 </section>

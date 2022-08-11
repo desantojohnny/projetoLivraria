@@ -1,0 +1,1 @@
+O usuario entrou na url /produtosO usuario entrou na url /registerO usuario entrou na url /formulario.jsAcessos => url /registerAcessos => url /formulario.jsAcessos => url /loginAcessos => url /loginAcessos => url /loginAcessos => url /loginAcessos => url /registerAcessos => url /formulario.jsAcessos => url /loginAcessos => url /registerAcessos => url /formulario.js
