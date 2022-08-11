@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var produtoRouter = require('./routes/produto');
 
+var logMiddleware = require('./middlewares/logSite'); //Importando ...
+
 var app = express();
 
 const db = require(__dirname + '/database/models/index');
@@ -22,6 +24,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); //
 
+
+app.use(logMiddleware); //Executando ...
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
