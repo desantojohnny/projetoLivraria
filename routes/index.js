@@ -11,6 +11,7 @@ var CarrinhoPasso4Controller = require('../controllers/CarrinhoPasso4Controller'
 var PedidoFinalizadoController = require('../controllers/PedidoFinalizadoController');
 const DadosFormularioUserController = require('../controllers/DadosFormularioUserController');
 const NovaRotaController = require('../controllers/NovaRotaController');
+const logDBMiddleware = require('../middlewares/log.DB');
 
 
 /* GET home page. */
@@ -27,8 +28,9 @@ router.get('/produto/:id', ProdutoController.productDetail);
 
 
 /* Página: Cadastre-se*/
-router.post('/register', LoginController.submit);
-router.get('/register', LoginController.index);
+
+router.get('/register', LoginController.index); 
+router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um Middleware - Entre rota e controller
 
 /* Página: Endereço*/
 router.get('/endereco', EnderecoController.index);
