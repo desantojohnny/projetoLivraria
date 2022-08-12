@@ -20,14 +20,25 @@ const LoginController = {
          console.log(client);
          return res.render("logado", {client})
     },
-    store: async (req, res) => {
+    // store: async (req, res) => {
 
-        let { email, senha } = req.body;
-        console.log(email)
-        console.log(senha)
+    //     let { email, senha } = req.body;
+        
+    //     let user = await db.Client.findOne( {where:{
+    //         email_login: email}
+    //     });
+    //     if(password === user.senha) {
+    //         req.session.senha = senha;
 
+    //         return res.redirect('/');
+    //     }
 
+    //     req.session.usuario = undefined;
+    //     return res.redirect('/login');
+    // },
+    logout: async (req, res) => {
+        req.session.destroy();
+        res.redirect('/login');
     }
 };
-
 module.exports = LoginController;

@@ -19,7 +19,9 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
-router.post('/login', LoginController.store);
+// router.post('/login', LoginController.store);
+// router.get('/logout', LoginController.logout);
+
 
 
 /* Todos os produtos - page */
