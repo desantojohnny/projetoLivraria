@@ -1,1 +1,1 @@
-Rgistro => url /registerRegistro criado => url /registerRegistro criado => url /registerRegistro criado => url /registerRegistro criado => url /register
+Rgistro => url /register

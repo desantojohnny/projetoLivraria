@@ -36,6 +36,8 @@ app.use(sessions({
 
 
 app.use(logMiddleware); //Executando ...
+app.use(express.urlencoded({ extended: false})); //1 - aula parte 2 (Ler corretamente as informações que vem do formulário)...
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
