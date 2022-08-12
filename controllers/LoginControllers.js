@@ -28,6 +28,14 @@ const LoginController = {
          console.log(client);
          return res.render("logado", {client})
     },
+    store: async (req, res) => {
+
+        let { email, senha } = req.body;
+        console.log(email)
+        console.log(senha)
+
+
+    }
 };
 
 module.exports = LoginController;

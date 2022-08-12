@@ -26,8 +26,13 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
+<<<<<<< HEAD
 router.post('/login',validacoes, logDBMiddleware, LoginController.submit); //dupliquei a rota get e mudei para post ...
 //inserido "validacoes" após a rota /login e antes de controller ...
+=======
+router.post('/login', LoginController.store);
+
+>>>>>>> c600fbd57083a9c2e3a43907fb7399fb469d1df7
 
 /* Todos os produtos - page */
 router.get('/produtos', ProdutoController.searchAllProducts);
@@ -46,7 +51,7 @@ router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um
 router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
-router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
+// router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
 
 /* Página: Carrinho - Passo 2*/
 router.get('/carrinhoPasso2', CarrinhoPasso2Controller.index);
