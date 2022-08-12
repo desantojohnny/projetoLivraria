@@ -4,7 +4,7 @@
         <!-- <p class="titulo">LOGIN</p><br> -->
         <div class="login">
             
-
+    
             <form class="form-login" action="/login" method="POST">
                 <h4>Faça seu login</h4><br>
 
@@ -12,13 +12,13 @@
                 
                 <div class="form-control">
                     <label class="titulo-form"></label><br>
-                    <label for="email" class="input-text"><b>Email*: </b></label>
-                    <input type="email" name="email" id="email" class="input-email" required placeholder="seuemail@email.com.br">
+                    <label for="email" class="input-text"><b>Email: </b></label>
+                    <input type="email" name="email" id="email" class="input-email"  placeholder="seuemail@email.com.br">
                     <br>
                 </div>
                 <div class="form-control">
-                    <label for="senha" class="input-text"><b>Senha*: </b></label>
-                    <input type="password" name="senha" id="senha" class="input-email" required>
+                    <label for="senha" class="input-text"><b>Senha: </b></label>
+                    <input type="password" name="senha" id="senha" class="input-email" >
                     <br><br>
                 </div>
                 <br><button type="submit" class="btn-entrar">ENTRAR</button><br><br>
@@ -33,6 +33,20 @@
     <!-- CADASTRO-->
     <div class="box-cadastro">
         <div class="cadastro">
+
+            <!-- Validação ... -->
+            <% if(typeof errors !== 'undefined'){ %>
+                <ul>
+                    <% for(let error in errors ){%>
+                    <li>
+                        <b><%= error %>: </b>
+                        <%=errors[error].msg %>
+                    </li>
+                    <% } %>
+                </ul>
+            <% } %>
+            <!-- FIM Validação ... -->
+
             <form action="/register" method="POST" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
                 <h4>Faça seu cadastro</h4><br>
                 <p>Se você ainda não tem conta, preencha o formulário abaixo:</p><br><br>
@@ -41,20 +55,20 @@
                 </div> 
 
                     <div class="form-control">
-                        <label for="nome" class="input-text-cadastro">Nome*: </label>
+                        <label for="nome" class="input-text-cadastro">Nome: </label>
                         <input type="text" name="nome" id="nome" class="input-text-cadastro-campo">
                         <br>
                     </div>
 
                     <div class="form-control">
-                        <label for="sobrenome" class="input-text-cadastro">Sobrenome*: </label>
-                        <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo" required >
+                        <label for="sobrenome" class="input-text-cadastro">Sobrenome: </label>
+                        <input type="text" name="sobrenome" id="sobrenome" class="input-text-cadastro-campo"  > 
                         <br>
                     </div>
                         
                     <div class="form-control">
-                        <label for="endereco" class="input-text-cadastro">Endereço*: </label>
-                        <input type="text" name="endereco" id="endereco" class="input-text-cadastro-campo" required >
+                        <label for="endereco" class="input-text-cadastro">Endereço: </label>
+                        <input type="text" name="endereco" id="endereco" class="input-text-cadastro-campo" >
                         <br>
                     </div>
 
@@ -71,14 +85,14 @@
                     </div>
                   
                     <div class="form-control">
-                        <label for="email" class="input-text-cadastro">Email*: </label>
-                        <input type="email" name="email" id="email" class="input-text-cadastro-campo" required placeholder="seuemail@email.com.br">
+                        <label for="email" class="input-text-cadastro">Email: </label>
+                        <input type="email" name="email" id="email" class="input-text-cadastro-campo"  placeholder="seuemail@email.com.br">
                         <br>
                     </div>
 
                     <div class="form-control">
-                        <label for="senha" class="input-text-cadastro">Senha*: </label>
-                        <input type="password" name="senha" id="senha" class="input-text-cadastro-campo" required>
+                        <label for="senha" class="input-text-cadastro">Senha: </label>
+                        <input type="password" name="senha" id="senha" class="input-text-cadastro-campo" >
                         <br>
                     </div>
            

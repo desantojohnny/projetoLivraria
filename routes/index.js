@@ -11,7 +11,14 @@ var CarrinhoPasso4Controller = require('../controllers/CarrinhoPasso4Controller'
 var PedidoFinalizadoController = require('../controllers/PedidoFinalizadoController');
 const DadosFormularioUserController = require('../controllers/DadosFormularioUserController');
 const NovaRotaController = require('../controllers/NovaRotaController');
-const logDBMiddleware = require('../middlewares/log.DB');
+const logDBMiddleware = require('../middlewares/log.DB'); //importando ...
+const { body } = require('express-validator'); //importando ...
+
+const validacoes = [                           //pegando informações pelo body (post) ...
+    body('nome').notEmpty().isString().withMessage('O campo "nome" não pode ser vázio!'),        //body = input do formulário name=nome ...
+    body('email').notEmpty().isEmail().withMessage('Por favor, insira um "e-mail" válido!')         //body = input do formulário name=email ...
+];
+
 
 
 /* GET home page. */
@@ -19,6 +26,8 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
+router.post('/login',validacoes, logDBMiddleware, LoginController.submit); //dupliquei a rota get e mudei para post ...
+//inserido "validacoes" após a rota /login e antes de controller ...
 
 /* Todos os produtos - page */
 router.get('/produtos', ProdutoController.searchAllProducts);
@@ -30,7 +39,8 @@ router.get('/produto/:id', ProdutoController.productDetail);
 /* Página: Cadastre-se*/
 
 router.get('/register', LoginController.index); 
-router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um Middleware - Entre rota e controller
+router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um Middleware - Entre rota e controller ...
+
 
 /* Página: Endereço*/
 router.get('/endereco', EnderecoController.index);
