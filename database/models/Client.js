@@ -23,7 +23,7 @@ module.exports = function(sequelize, dataTypes) {
         phone: {
             type: dataTypes.STRING
         },
-        bithday: {
+        birthday: {
             type: dataTypes.DATE
         },
         email_login: {
@@ -31,6 +31,9 @@ module.exports = function(sequelize, dataTypes) {
         },
         password: {
             type: dataTypes.STRING
+        },
+        client_id: {
+            type: dataTypes.INTEGER
         }
     };
 

@@ -13,6 +13,7 @@ const DadosFormularioUserController = require('../controllers/DadosFormularioUse
 const NovaRotaController = require('../controllers/NovaRotaController');
 const logDBMiddleware = require('../middlewares/log.DB'); //importando ...
 const { body } = require('express-validator'); //importando ...
+var auth = require("../middlewares/auth");
 
 const validacoes = [                           //pegando informações pelo body (post) ...
     body('nome').notEmpty().isString().withMessage('O campo "nome" não pode ser vázio!'),        //body = input do formulário name=nome ...
@@ -26,9 +27,9 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
+router.post('/login/register', LoginController.submit);
 router.post('/login', LoginController.store);
 
->>>>>>> c600fbd57083a9c2e3a43907fb7399fb469d1df7
 
 /* Todos os produtos - page */
 router.get('/produtos', ProdutoController.searchAllProducts);
@@ -39,7 +40,7 @@ router.get('/produto/:id', ProdutoController.productDetail);
 
 /* Página: Cadastre-se*/
 
-router.get('/register', LoginController.index); 
+//router.get('/register', LoginController.index); 
 router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um Middleware - Entre rota e controller ...
 
 
@@ -47,19 +48,19 @@ router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um
 router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
-// router.get('/carrinhoPasso1', CarrinhoPasso1Controller.index);
+// router.get('/carrinhoPasso1', auth, CarrinhoPasso1Controller.index);
 
 /* Página: Carrinho - Passo 2*/
-router.get('/carrinhoPasso2', CarrinhoPasso2Controller.index);
+router.get('/carrinhoPasso2', auth, CarrinhoPasso2Controller.index);
 
 /* Página: Carrinho - Passo 3*/
-router.get('/carrinhoPasso3', CarrinhoPasso3Controller.index);
+router.get('/carrinhoPasso3', auth, CarrinhoPasso3Controller.index);
 
 /* Página: Carrinho - Passo 4*/
-router.get('/carrinhoPasso4', CarrinhoPasso4Controller.index);
+router.get('/carrinhoPasso4', auth, CarrinhoPasso4Controller.index);
 
 /* Página: Pedido Finalizado*/
-router.get('/pedidoFinalizado', PedidoFinalizadoController.index);
+router.get('/pedidoFinalizado', auth, PedidoFinalizadoController.index);
 
 /* Página: Test Dados do Formulário*/
 router.post('/dadosFormularioUser', DadosFormularioUserController.index);

@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var sessions = require('express-session');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -27,11 +27,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cookieParser());
 const oneDay = 1000 * 60 * 60 * 24;
-app.use(sessions({
-    secret: "secret",
+
+app.use(session({
+    secret: "ProjetoIntegrador",
     saveUninitialized:true,
     cookie: { maxAge: oneDay },
-    resave: false 
+    resave: true 
 }));
 
 
