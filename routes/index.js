@@ -28,7 +28,6 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 router.get('/login', LoginController.index);
 router.post('/login', LoginController.store);
 
->>>>>>> c600fbd57083a9c2e3a43907fb7399fb469d1df7
 
 /* Todos os produtos - page */
 router.get('/produtos', ProdutoController.searchAllProducts);
