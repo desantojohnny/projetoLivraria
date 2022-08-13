@@ -55,27 +55,12 @@ CREATE TABLE `clients` (
     `phone` varchar(20) DEFAULT NULL,
     `birthday` date DEFAULT NULL,
     `email_login` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-    `password` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,   
+    `password` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `client_id` int(10) DEFAULT NULL,
     PRIMARY KEY (`id`)
 ) CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-LOCK TABLES `clients` WRITE;
 
-INSERT INTO
-  `clients`
-VALUES
-(1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(5, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(6, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(9, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(10, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
-UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
@@ -86,22 +71,4 @@ CREATE TABLE `orders` (
     PRIMARY KEY (`id`),
     KEY `orders_client_id_foreign` (`client_id`),
     CONSTRAINT `orders_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)
-) CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-LOCK TABLES `orders` WRITE;
-
-INSERT INTO
-  `orders`
-VALUES
-(1, NULL, NULL, NULL),
-(2, NULL, NULL, NULL),
-(3, NULL, NULL, NULL),
-(4, NULL, NULL, NULL),
-(5, NULL, NULL, NULL),
-(6, NULL, NULL, NULL),
-(7, NULL, NULL, NULL),
-(8, NULL, NULL, NULL),
-(9, NULL, NULL, NULL),
-(10, NULL, NULL, NULL);
-
-UNLOCK TABLES;  
+) CHARSET=utf8 COLLATE=utf8_unicode_ci; 
