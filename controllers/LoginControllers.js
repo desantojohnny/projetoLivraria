@@ -38,6 +38,11 @@ const LoginController = {
         });
         if(user.password == senha) {
             req.session.user = user;
+
+            //if(logado != undefined){
+                //res.cookie('logado', user.email, {maxAge: oneDay})
+            //}
+
             return res.redirect('/');
         }
         req.session.usuario = undefined;
