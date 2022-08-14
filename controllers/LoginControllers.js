@@ -1,6 +1,8 @@
 const db = require("../database/models/index");
 const { Client } = require('../database/models');
 //const { validationResult } = require('express-validator');     //importanto = express-validation / desestruturando = validationResult ...
+const bcrypt = require('bcrypt');
+
 
 const LoginController = {
     index: (req, res) => {
@@ -16,11 +18,14 @@ const LoginController = {
         //}                                   //fim validação ...
          
          let {nome, sobrenome, email, senha, cpf, endereco} = req.body;
+
+         let senhaCrypt = bcrypt.hashSync(senha, 10);
+
          const client = await db.Client.create({
             first_name: nome,
             last_name: sobrenome,
             email_login: email,
-            password: senha,
+            password: senhaCrypt,
             CPF: cpf,
             adress: endereco
          })
@@ -36,7 +41,11 @@ const LoginController = {
         where:{
             email_login: email}
         });
-        if(user.password == senha) {
+        
+        if(!bcrypt.compareSync(senha, user.password)){
+            return res.send('Senha inválida!')
+        } 
+        if (bcrypt.compareSync(senha, user.password)){ 
             req.session.user = user;
 
             //if(logado != undefined){
@@ -44,9 +53,11 @@ const LoginController = {
             //}
 
             return res.redirect('/');
+        } 
+        else { 
+            req.session.usuario = undefined;
+            return res.redirect('/login');
         }
-        req.session.usuario = undefined;
-        return res.redirect('/login');
     },
     logout: async (req, res) => {
         req.session.destroy();

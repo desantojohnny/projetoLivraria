@@ -1,5 +1,3 @@
-const path = require('path');
-
 const cookieLogin = (req, res, next) => {
     if(req.cookies.logado != undefined && req.session.user == undefined){
         let email = req.cookies.logado;
