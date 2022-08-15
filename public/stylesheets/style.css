@@ -822,6 +822,9 @@ padding: 3px 3px;
     margin-bottom: 40px;
 }
 
+.msg-error {
+    color: red;
+}
 .titulo-form {
     font-size: 22px;
 }

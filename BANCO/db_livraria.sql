@@ -48,14 +48,14 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `clients`;
 CREATE TABLE `clients` (
 	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `first_name` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-    `last_name` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-    `adress` varchar(300) COLLATE utf8_unicode_ci DEFAULT NULL,
-    `CPF` varchar(20) DEFAULT NULL,
-    `phone` varchar(20) DEFAULT NULL,
+    `first_name` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `last_name` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+    `adress` varchar(300) COLLATE utf8_unicode_ci NOT NULL,
+    `CPF` varchar(15) NOT NULL,
+    `phone` varchar(15) NOT NULL,
     `birthday` date DEFAULT NULL,
-    `email_login` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-    `password` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `email_login` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+    `password` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
     `client_id` int(10) DEFAULT NULL,
     PRIMARY KEY (`id`)
 ) CHARSET=utf8 COLLATE=utf8_unicode_ci;

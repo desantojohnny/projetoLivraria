@@ -1,6 +1,6 @@
 const db = require("../database/models/index");
 const { Client } = require('../database/models');
-//const { validationResult } = require('express-validator');     //importanto = express-validation / desestruturando = validationResult ...
+const { validationResult } = require('express-validator');     //importanto = express-validation / desestruturando = validationResult ...
 const bcrypt = require('bcrypt');
 
 
@@ -9,15 +9,15 @@ const LoginController = {
         return res.render('cadastrese');
     },
     submit: async (req, res) => {
-        //const errors = validationResult(req);              //Todas as validações ficam disponível no "req" ...
+        const errors = validationResult(req);
          
-        // if (!errors.isEmpty()) {            //início validação ...
-            //console.log(errors.mapped);//      // função mapped "aparece o erro de forma mais elaborado"...
-            //return res.render('login', { errors: errors.mapped() });  //retornando "errors" para a view 'cadastrese' ...
+        if (!errors.isEmpty()) {
+            //console.log(errors.mapped);
+            return res.render('cadastrese', { errors: errors.mapped() });
         
-        //}                                   //fim validação ...
+        }                                   //fim validação ...
          
-         let {nome, sobrenome, email, senha, cpf, endereco} = req.body;
+         let {nome, sobrenome, email, senha, cpf, telefone, endereco} = req.body;
 
          let senhaCrypt = bcrypt.hashSync(senha, 10);
 
@@ -27,6 +27,7 @@ const LoginController = {
             email_login: email,
             password: senhaCrypt,
             CPF: cpf,
+            phone: telefone,
             adress: endereco
          })
 

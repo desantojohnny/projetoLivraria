@@ -15,9 +15,28 @@ const logDBMiddleware = require('../middlewares/log.DB'); //importando ...
 const { body } = require('express-validator'); //importando ...
 var auth = require("../middlewares/auth");
 
-const validacoes = [                           //pegando informações pelo body (post) ...
-    body('nome').notEmpty().isString().withMessage('O campo "nome" não pode ser vázio!'),        //body = input do formulário name=nome ...
-    body('email').notEmpty().isEmail().withMessage('Por favor, insira um "e-mail" válido!')         //body = input do formulário name=email ...
+const validations = [                           //pegando informações pelo body (post) ...
+    body('nome')
+        .notEmpty().withMessage('O campo "Nome" não pode ser vázio!').bail()
+        .isString().withMessage('Este não é um nome válido!'),
+    body('sobrenome')
+        .notEmpty().withMessage('O campo "Sobrenome" não pode ser vázio!').bail()
+        .isString().withMessage('Este não é um sobrenome válido!'),
+    body('endereco')
+        .notEmpty().withMessage('O campo "Endereço" não pode ser vázio!').bail()
+        .isString().withMessage('Este não é um endereço válido!'),
+    body('cpf')
+        .notEmpty().withMessage('O campo "CPF" não pode ser vázio!').bail()
+        .isLength({min:14, max:14}).withMessage('O CPF deve ter apenas 11 dígitos!'),
+    body('telefone')
+        .notEmpty().withMessage('O campo "Telefone" não pode ser vázio!').bail()
+        .isLength({min:11, max:12}).withMessage('O telefone deve ter entre 10 e 12 dígitos!'),
+    body('email')
+        .notEmpty().withMessage('O campo "Email" não pode ser vázio!').bail()
+        .isEmail().withMessage('Por favor, insira um "e-mail" válido!'),
+    body('senha')
+        .notEmpty().withMessage('O campo "Senha" não pode ser vázio!').bail()
+        .isLength({min:5, max:12}).withMessage('A senha deve ter entre 5 e 12 dígitos!')
 ];
 
 
@@ -27,7 +46,7 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 
 /* login page */
 router.get('/login', LoginController.index);
-router.post('/login/register', LoginController.submit);
+router.post('/login/register', validations, LoginController.submit);
 router.post('/login', LoginController.store);
 
 

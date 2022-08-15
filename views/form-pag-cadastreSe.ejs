@@ -1,3 +1,31 @@
+<script>
+    function mask(i,t){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   if(t == "cpf"){
+      i.setAttribute("maxlength", "14");
+      if (v.length == 3 || v.length == 7) i.value += ".";
+      if (v.length == 11) i.value += "-";
+   }
+
+   if(t == "tel"){
+      if(v[2] == 9){
+         i.setAttribute("maxlength", "12");
+         if (v.length == 7) i.value += "-";
+      }else{
+         i.setAttribute("maxlength", "11");
+         if (v.length == 6) i.value += "-";
+      }
+   }
+};
+</script>
+ 
 <!-- LOGIN-->
 <section>
     <div class="box-login">
@@ -39,25 +67,27 @@
     <div class="box-cadastro">
         <div class="cadastro">
 
-            <!-- Validação ... -->
-            <% if(typeof errors !== 'undefined'){ %>
-                <ul>
-                    <% for(let error in errors ){%>
-                    <li>
-                        <b><%= error %>: </b>
-                        <%=errors[error].msg %>
-                    </li>
-                    <% } %>
-                </ul>
-            <% } %>
-            <!-- FIM Validação ... -->
-
             <form action="/login/register" method="POST" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
                 <h4>Faça seu cadastro</h4><br>
                 <p>Se você ainda não tem conta, preencha o formulário abaixo:</p><br><br>
                 <div class="header">              
                     <label class="titulo-form-cadastro">DADOS PESSOAIS</label><br><br>
-                </div> 
+                </div>
+                
+                <div class="msg-error">
+                    <!-- Errors msg ... -->
+                    <% if(typeof errors !== 'undefined'){ %>
+                        <ul>
+                            <% for(let error in errors ){%>
+                            <li>
+                                <b><%= error %>: </b>
+                                <%=errors[error].msg %>
+                            </li>
+                            <% } %>
+                        </ul>
+                    <% } %>
+                    <!-- FIM Errors msg ... -->
+                </div><br>
 
                     <div class="form-control">
                         <label for="nome" class="input-text-cadastro">Nome: </label>
@@ -79,13 +109,13 @@
 
                     <div class="form-control">
                         <label for="cpf" class="input-text-cadastro">CPF: </label>
-                        <input type="number" name="cpf" id="cpf" class="input-text-cadastro-campo" >
+                        <input type="text" name="cpf" oninput="mask(this, 'cpf')" id="cpf" class="input-text-cadastro-campo" >
                         <br>
                     </div>
 
                     <div class="form-control">
-                        <label for="telephone" class="input-text-cadastro">Telefone: </label>
-                        <input type="number" name="telephone" id="telephone" class="input-text-cadastro-campo">
+                        <label for="telefone" class="input-text-cadastro">Telefone: </label>
+                        <input type="text" name="telefone" oninput="mask(this, 'tel')" id="tel" id="telefone" class="input-text-cadastro-campo">
                         <br>
                     </div>
                   
