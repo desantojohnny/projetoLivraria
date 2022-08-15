@@ -6,6 +6,10 @@ const bcrypt = require('bcrypt');
 
 const LoginController = {
     index: (req, res) => {
+        if(req.session.client){
+            let client = req.session.client
+            return res.render('logado', {client})
+        };
         return res.render('cadastrese');
     },
     submit: async (req, res) => {
@@ -31,32 +35,35 @@ const LoginController = {
             adress: endereco
          })
 
-         console.log(client);
-         return res.render("logado", {client})
+        //  console.log(client);
+            return res.redirect('/');
     },
     store: async (req, res) => {
 
         let { email, senha } = req.body;
         
-        let user = await Client.findOne({
+        let client = await Client.findOne({
         where:{
             email_login: email}
         });
         
-        if(!bcrypt.compareSync(senha, user.password)){
+        if(!bcrypt.compareSync(senha, client.password)){
             return res.send('Senha inválida!')
         } 
-        if (bcrypt.compareSync(senha, user.password)){ 
-            req.session.user = user;
+        if (bcrypt.compareSync(senha, client.password)){ 
+            req.session.client = client;
+                req.session.save(function() {
+                    return res.render("logado", {client});
+              });
 
             //if(logado != undefined){
                 //res.cookie('logado', user.email, {maxAge: oneDay})
             //}
 
-            return res.redirect('/');
+            // return res.redirect('/');
         } 
         else { 
-            req.session.usuario = undefined;
+            req.session.client = undefined;
             return res.redirect('/login');
         }
     },
