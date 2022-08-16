@@ -1442,29 +1442,32 @@ h2 {
 /* Carrinho Passo 1 - Section*/
 .carrinhoPasso1-section{
     background-color: rgb(211, 211, 211) 1px solid;
+    height: max-content;
     padding: 5px;
-    margin: 0px;  
+    margin: 0px; 
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .container-Passo1{
-    height: 800px;
+    height: 120vh;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     margin: 5px;
     background-color: rgb(211, 211, 211) 1px solid;
-    padding: 3%;  
+    padding: 10px;  
 }
  .box1P1{ /*Passo 1 - Coluna 1 "Borda" */
   background-color: rgb(255, 255, 255) 1px solid;
-  width: 750px;
+  width: 900px;
   height: 480px;
-  border: lightgrey 1px solid;
+  /* border: lightgrey 1px solid; */
 }
 .box2P1{ /*Passo 1 - Coluna 1 "Endereço de Entrega" */
     background-color:  #356859;
-    width: 750px;
+    width: 902px;
     height: 50px;
-    border: lightgrey 1px solid;
+    /* border: lightgrey 1px solid; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1477,13 +1480,27 @@ h2 {
 }
 .box3P1{ /*Passo 1 - Coluna 1 LISTA "Dados do Cliente" - Alinhamento Texto e Caixa Branca*/
     background-color: rgb(252, 253, 251);
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 25vh;
     border: lightgrey 1px solid;
     display: flex;
-    justify-content:center;
-    margin-left: 17%;
-    
+    justify-content:space-around;
+}
+.box3P1-x {
+    background-color: rgb(252, 253, 251);
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.box3P1-z {
+    background-color: rgb(252, 253, 251);
+    border: lightgrey 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
 }
 .lista-p1{ /*Passo 1 - Coluna 1 LISTA "Dados do Cliente"  - Alinhamento do Texto*/
     margin-top: 25px;
@@ -1496,7 +1513,21 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 11%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 100px; */
+    color: rgb(251, 251, 251);
+    border-radius: 10px; 
+}
+.button-continuarcomprandoP2{/*Passo 1 - Coluna 1 BOTÃO "Continuar Comprando" */
+    background-color: #FD5523;
+    width: 200px;
+    height: 50px;
+    border: lightgrey 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 10px; */
+    /* margin-bottom: 100px; */
     color: rgb(251, 251, 251);
     border-radius: 10px; 
 }
@@ -1505,7 +1536,7 @@ h2 {
     width: 500px;
     height: 30px;
     border: lightgrey 1px solid;
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-left: 17%;
 }
@@ -1530,12 +1561,36 @@ h2 {
     border-radius: 5px;
     color: white;
 }
-
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    
+}
+.product-title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 /* Carrinho Passo1 - Coluna 2 */
 .box1P1-1{ /* Carrinho Passo1 - Coluna 2 - "BORDA"*/
     border: lightgrey 1px solid;
     width: 350px;
-    height: 600px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 20px;
 }
 .box1P1-2{  /* Carrinho Passo1 - Coluna 2 - CAIXA "Botão: Alterar meu carrinho"*/
     display: flex;
@@ -1577,25 +1632,42 @@ h2 {
     margin-bottom: 50px;
 }
 .box1P1-5{ /*CAIXA - TEXTO: TOTAL e R$ 49,55*/
-    border: lightgrey 1px solid;
     width: 350px;
     height: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     border-left: none;
     border-bottom: none;
 }
+
 .caixa-btn-passo1-cont{/*CAIXA - TEXTO: TOTAL e R$ 49,55*/
     border: none;
-    width: 350px;
+    /* width: 350px; */
     height: 35px;
-    border-top: none; 
+    border-top: none;
+    display: flex;
+    justify-content: center;
 }
 .btn-passo1-cont{ /*CAIXA - BOTÃO - CONTINUAR*/
     width: 200px;
+    height: 50px;
+    /* margin-top: 5px; */
+    /* margin-left: 30px; */
+    background-color: #FD5523;
+    border: gray;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-passo1-cont-1{ /*CAIXA - BOTÃO - CONTINUAR*/
+    width: 70px;
     height: 25px;
     margin-top: 5px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     background-color: #FD5523;
     border: gray;
     border-radius: 5px;

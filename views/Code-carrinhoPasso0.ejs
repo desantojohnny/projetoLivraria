@@ -1,0 +1,98 @@
+<script type="text/javascript">
+    function id( el ){
+            return document.getElementById( el );
+    }
+    window.onload = function(){
+            id('mais').onclick = function(){
+                    id('format').value = parseInt( id('format').value )+1;
+                    
+                    id('total').value = 20*id('format').value;
+            }
+            id('menos').onclick = function(){
+                    if( id('format').value>0 )
+                            id('format').value = parseInt( id('format').value )-1;
+                    
+                    id('total').value = 20*id('format').value;
+            }
+    }       
+</script>
+
+<section class="carrinhoPasso1-section">
+    <div class="container-Passo1">
+         <div class="box1P1"> <!--Passo 1 - Coluna Esquerda "Borda" -->
+            <div class="box2P1"><!--Passo 1 - Coluna Esquerda "Endereço de Entrega" -->
+                <h1 class="h1-1">MEU CARRINH</h1>
+            </div>
+            <h2 class="Sub-Título-P1C1">ENDEREÇO</h2>
+            <div class="box3P1"><!--Passo 1 - Coluna Esquerda "Caixa Branca" -->
+                <ul class="lista-p1"><!--Passo 1 - Coluna Esquerda "Dados do Cliente" -->
+                    <li>NOME: DIEGO</li>
+                    <li>SOBRENOME: TENGAN</li>
+                    <li>RUA: MICROSOFT VS CODE</li>
+                    <li>NÚMERO: 1000</li>
+                    <li>BAIRRO: NODE JS</li>
+                    <li>CIDADE: FIGMA</li>
+                    <li>ESTADO: FULL STACK WEB</li>
+                    <li>CEP</li>
+                </ul>
+            </div>
+            <div class="box4P1"><!--Passo 1 - Coluna Esquerda "Botões: Editar e Remover" -->
+                <input type="button" name="menos" id="menos" value="-" />
+                <input type="text" name="format" value="0" id="format" size="2">
+                <input type="button" name="mais" id="mais" value="+" />
+                
+                
+                <br />
+                 x 20,00
+                
+                <br /><br />
+                Total: <input type="text" name="total" id="total" value="" />
+                <!-- <button type="submit" class="button-editarP1">Editar</button>
+                <button type="submit" class="button-removerP1">Remover</button> -->
+            </div>
+            <!-- <button type="submit" class="button-adicionarP1">+Adicionar um novo endereço</button> -->
+            <button type="submit" class="button-continuarcomprandoP1">CONTINUAR COMPRANDO</button>
+        </div>
+        <!-- "Coluna-Meu carrinho - Coluna 2" -->
+        <div class="box1P1-1">
+            <div class="box1P1-A">
+                <h1 class="h1-1-1">MEU CARRINHO</h1>
+            </div>
+            <div class="box1P1-2"><!-- "Caixa do Botão - Alterar Carrinho" -->
+                <button type="submit" class="btn-passo1">Alterar CARRINHO</button>
+            </div>
+            <div class="box1P1-3"> <!-- Caixa - Imagem do Livro-->
+                <div class="textoimgP1-1">
+                    <div id="Imagem-Livro-CarrinhoP1">
+                            <img src="/images/diego.jpg" title="Nirvana" width="150" height="200"></a>   
+                    </div>
+                </div>
+            </div>
+            <div class="box1P1-4"><!---->
+                <p class="h2-P1-4">Total em produtos</p>
+                <p class="p-P1-4">Expresso (2 a 10 dias úteis)</p>
+            </div>
+            <div class="box1P1-5"><!---->
+                <div class="box1P1-5-1">
+                    <p class="h1-P1-5">Total</p>
+                </div>
+                <div class="box1P1-5-2">
+                    <p class="p-P1-5">R$ 49,55</p>
+                </div>
+            </div>
+            <div class="caixa-btn-passo1-cont">
+                <button type="submit" class="btn-passo1-cont">CONTINUAR</button>
+            </div>
+            <div class="box1P1-6">
+                <p class="passo1">Passo 1 - 4</p>
+            </div>
+            <div class="box1P1-7">
+                <div class="texto-box1P1-7">
+                    <h1 class="h1-box1P1-7">Quer frete grátis?</h1>
+                    <p class="p-box1P1-7">Adicione ****** para ter frete grátis!</p>
+                    <p class="p2-box1P1-7">Confira algumas sugestões</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

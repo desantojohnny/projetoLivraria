@@ -44,13 +44,16 @@
                 <span>- R$<%= (0.1* book.price).toFixed(2).replace('.', ',') %></span>
             </div>
 
-            <div class="button-buy">
-                <button class="buy">COMPRAR</button>
-            </div>
-            <div class="button-buy">
-                <button class="buy">COMPRAR</button>
-                <button class="add-carrinho">ADICIONAR AO CARRINHO</button>
-            </div>
+            <form action="/comprar-produto/<%=book.id%>" method="POST">
+                <div class="button-buy">
+                    <button class="buy">COMPRAR</button>
+                </div>
+            </form>
+            <form action="/add-produto-ao-carrinho/<%=book.id%>" method="POST">
+                <div class="button-buy">
+                    <button class="add-carrinho">ADICIONAR AO CARRINHO</button>
+                </div>
+            </form>
             <div class="compartilhar">
                 <spam class="title-compartilhar">Compartilhar</spam>
                 <a class="facebook" target="_blank" href="">_</a>

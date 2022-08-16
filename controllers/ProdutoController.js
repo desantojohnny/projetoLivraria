@@ -1,5 +1,6 @@
 const db = require("../database/models/index");
 const { Book } = require('../database/models');
+const { Order } = require('../database/models');
 // const { where } = require("sequelize/types");
 
 const ProdutoController = {
@@ -36,6 +37,110 @@ const ProdutoController = {
         });
         
         return res.render("home", {books, bests, releasings});
+    },
+    addToCart: async (req, res) => {
+
+        if(req.session.client){
+            let client = req.session.client
+            // console.log(client);
+
+            let product;
+                let id = req.params.id;
+                await db.Book.findByPk(id).then((data)=>{
+                    product = data.dataValues;
+                    return console.log(product);
+                });
+             
+        
+            const orders = await db.Order.create({
+                request_date: new Date(),
+                client_id: client.id,
+                id_product: product.id,
+                url_img: product.url_image,
+                titulo: product.title,
+                nome_autor: product.authors,
+                preco: product.price
+            })
+            return res.redirect('/produto/'+ product.id)
+        }else { 
+            req.session.client = undefined;
+            return res.redirect('/login');
+        }
+
+    },
+    shop: async (req, res) => {
+
+        if(req.session.client){
+            let client = req.session.client
+            // console.log(client);
+
+            let product;
+                let id = req.params.id;
+                await db.Book.findByPk(id).then((data)=>{
+                    product = data.dataValues;
+                    return console.log(product);
+                });
+             
+        
+            const orders = await db.Order.create({
+                request_date: new Date(),
+                client_id: client.id,
+                id_product: product.id,
+                url_img: product.url_image,
+                titulo: product.title,
+                nome_autor: product.authors,
+                preco: product.price
+            })
+            return res.redirect('/carrinhoPasso1')
+        }else { 
+            req.session.client = undefined;
+            return res.redirect('/login');
+        }
+
+    },
+    addToCart: async (req, res) => {
+
+        if(req.session.client){
+            let client = req.session.client
+            // console.log(client);
+
+            let product;
+                let id = req.params.id;
+                await db.Book.findByPk(id).then((data)=>{
+                    product = data.dataValues;
+                    return console.log(product);
+                });
+             
+        
+            const orders = await db.Order.create({
+                request_date: new Date(),
+                client_id: client.id,
+                id_product: product.id,
+                url_img: product.url_image,
+                titulo: product.title,
+                nome_autor: product.authors,
+                preco: product.price
+            })
+            return res.redirect('/produto/'+ product.id)
+        }else { 
+            req.session.client = undefined;
+            return res.redirect('/login');
+        }
+
+    },
+    destroy: async (req, res) => {
+
+            const {id} = req.params;
+            console.log(id)    
+             
+        
+            const resultado = await db.Order.destroy({
+                where:{
+                    id: id}
+            })
+             console.log(resultado)
+            return res.redirect('/')
+        // }
     }
 };
 

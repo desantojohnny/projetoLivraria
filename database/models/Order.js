@@ -16,6 +16,21 @@ module.exports = function(sequelize, dataTypes) {
         },
         client_id: {
                 type: dataTypes.INTEGER
+        },
+        id_product: {
+                type: dataTypes.INTEGER
+        },
+        url_img: {
+                type: dataTypes.STRING
+        },
+        titulo: {
+                type: dataTypes.STRING
+        },
+        nome_autor: {
+                type: dataTypes.STRING
+        },
+        preco: {
+                type: dataTypes.STRING
     }
     };
 

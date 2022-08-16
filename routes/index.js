@@ -4,7 +4,7 @@ var LoginController = require('../controllers/LoginControllers');
 var ProdutoController = require('../controllers/ProdutoController');
 var CadastreSeController = require('../controllers/CadastreSeController');
 var EnderecoController = require('../controllers/EnderecoController');
-var CarrinhoPasso1Controller = require('../controllers/CarrinhoPasso1Controller');
+var CarrinhoController = require('../controllers/CarrinhoController');
 var CarrinhoPasso2Controller = require('../controllers/CarrinhoPasso2Controller');
 var CarrinhoPasso3Controller = require('../controllers/CarrinhoPasso3Controller');
 var CarrinhoPasso4Controller = require('../controllers/CarrinhoPasso4Controller');
@@ -14,6 +14,7 @@ const NovaRotaController = require('../controllers/NovaRotaController');
 const logDBMiddleware = require('../middlewares/log.DB'); //importando ...
 const { body } = require('express-validator'); //importando ...
 var auth = require("../middlewares/auth");
+
 
 const validations = [                           //pegando informações pelo body (post) ...
     body('nome')
@@ -55,6 +56,11 @@ router.get('/produtos', ProdutoController.searchAllProducts);
 
 /* Descrição do produto - page */
 router.get('/produto/:id', ProdutoController.productDetail);
+router.post('/add-produto-ao-carrinho/:id', ProdutoController.addToCart);
+router.post('/comprar-produto/:id', ProdutoController.shop);
+router.delete('/removeCart/:id', CarrinhoController.destroy);
+
+
 
 
 /* Página: Cadastre-se*/
@@ -67,7 +73,7 @@ router.post('/register', logDBMiddleware, LoginController.submit); //Inserido um
 router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
-// router.get('/carrinhoPasso1', auth, CarrinhoPasso1Controller.index);
+router.get('/carrinhoPasso1', auth, CarrinhoController.index);
 
 /* Página: Carrinho - Passo 2*/
 router.get('/carrinhoPasso2', auth, CarrinhoPasso2Controller.index);
