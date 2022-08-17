@@ -16,13 +16,29 @@ const CarrinhoController = {
          
     
         const resultado = await db.Order.destroy({
-            where:{
-                id: id}
+            where:{ id: id }
         })
          console.log(resultado)
-        return res.redirect('/')
+        return res.redirect('/carrinhoPasso1')
     
-    }
+    },
+    update: async (req, res) => {
+
+        let {id} = req.params;
+
+        let {newValue} = req.body
+        try{
+            const order = await db.Order.findByPk(id)
+            await order.update({
+                quantidade: Number(newValue)
+            })
+            return res.redirect('/carrinhoPasso1/');
+
+        }catch(e){
+            console.log(e.message)
+        }
+
+    },
     //     add: async (req, res) => {
             
     //          let {pagamento, data, client_id, book_id, quantidade} = req.body;

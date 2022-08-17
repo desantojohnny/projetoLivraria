@@ -68,7 +68,11 @@ CREATE TABLE `orders` (
     `payment` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
     `request_date` date DEFAULT NULL,
     `client_id` int(10) unsigned DEFAULT NULL,
+    `id_product` int(10) DEFAULT NULL,
+    `url_img` varchar(30) DEFAULT NULL,
+    `titulo` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `nome_autor` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+    `preco` decimal(6, 2) NOT NULL,
     PRIMARY KEY (`id`),
-    KEY `orders_client_id_foreign` (`client_id`),
-    CONSTRAINT `orders_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)
+    KEY `orders_client_id_foreign` (`client_id`)    
 ) CHARSET=utf8 COLLATE=utf8_unicode_ci; 

@@ -1,3 +1,4 @@
+<%- include('header'); %>
 <section class="carrinhoPasso1-section">
 
     <div class="container-Passo1">
@@ -10,65 +11,13 @@
 
             <div class="box-pedidoFinalizado">
                 <P class="p1-pedidoFinalizado">
-                  Olá, DIEGO TENGAN !<br>
+                  Olá, <%= orderClient.first_name %> !<br>
                   Muito OBRIGADO por comprar nosso(s) produto(s). <br>
                   Agradecemos pela sua confiança!
                 </P>
             </div>
 
             
-        </div>
-        <!-- ******** "Coluna-Meu carrinho" -->
-        <div class="box1P1-1">
-            <div class="box1P1-A">
-                <h1 class="h1-1-1">ENDEREÇO</h1>
-            </div>
-
-            <div>
-              <p class="p2-pedidoFinalizado">
-                Nome: DIEGO TENGAN <br>
-                RUA: MICROSOFT VS CODE, 1000 <br>
-                BAIRRO: NODE JS <br>
-                CIDADE: FIGMA <br>
-                ESTADO: FULL STACK WEB <br>
-                CEP: 00 000 000 <br>
-              
-              </p>
-              </div>
-
-            <div class="box1P1-pedidoFinalizado">
-              <h1 class="h1-1-1">RESUMO DO PEDIDO</h1>
-          </div>
-
-
-            <div class="box1P1-3">
-                <div class="textoimgP1-1">
-                    <div id="Imagem-Livro-CarrinhoP1">
-                        <img src="/images/diego.jpg" title="Nirvana" width="150" height="200"></a>   
-                </div>
-                </div>
-            </div>
-
-            <div class="box1P1-4">
-                <p class="h2-P1-4">Total em produtos</p>
-                <!-- <p class="p-P1-4">Expresso (2 a 10 dias úteis)</p> -->
-            </div>
-
-            <div class="box1P1-5">
-                <div class="box1P1-5-1">
-                    <p class="h1-P1-5">Total</p>
-                </div>
-                <div class="box1P1-5-2">
-                    <p class="p-P1-5">R$ 49,55</p>
-                </div>
-                
-            </div>
-
-            <div class="box1P1-6">
-                <p class="passo1">PEDIDO FINALIZADO !</p>
-            </div>
-
-            
-        </div>
+        
     </div>
 </section>

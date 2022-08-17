@@ -1575,6 +1575,15 @@ h2 {
     justify-content: space-between;
     
 }
+.product1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    background-color: white;
+    height: 50vh;
+    padding-top: 50px;
+}
 .product-title {
     display: flex;
     flex-wrap: wrap;
@@ -1701,7 +1710,7 @@ h2 {
 }
 .box2P2{ /*Passo 1 - Coluna 1 "Endereço de Entrega" */
     background-color:  white;
-    width: 750px;
+    width: 910px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1714,7 +1723,7 @@ h2 {
 }
 .box2P-2{ /*Passo 1 - Coluna 1 "Forma de Envio" */
     background-color: #356859;
-    width: 750px;
+    width: 910px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1763,7 +1772,7 @@ h2 {
 }
 .box2P-3{/*FORMA DE PAGAMENTO*/
     background-color: #356859 ;
-    width: 750px;
+    width: 910px;
     height: 50px;
     border: lightgrey 1px solid;
     display: flex;
@@ -1778,17 +1787,18 @@ h2 {
     background-color: white;
     width: 300px;
     height: 180px;
-    margin-left: 30%;
+    margin-left: 35%;
     border: lightgrey 1px solid;
     border-radius: 10px;
+    
 }
 .caixa-btn-passo3-cont3-3{/*Termos de Uso*/
 margin-left: 1%;
 }
 .box3p-3{ /*Passo 1 - Coluna 1 "Borda" */
     background-color: rgb(255, 255, 255) 1px solid;
-    width: 750px;
-    height: 480px;
+    width: 910px;
+    height: 120vh;
     border: lightgrey 1px solid;
   }
 .button-continuarcomprandoP3-1{
@@ -1858,23 +1868,31 @@ HEAD
 }
 .box-pedidoFinalizado{
     padding-top: 25%;
+    font-size: 25px;
+    text-align: center;
 }
 .box1P1-CF{
-    background-color:#356859;
+    background-color:rgb(93, 214, 144);
     width: 550px;
     height: 480px;
-    border: lightgrey 1px solid;
-    color: white;
+    /* border: lightgrey 1px solid; */
+    /* color: white; */
   }
   .box1P1-pedidoFinalizado{
     padding-top: 25px;
+    font-size: 30px;
   }
   .p2-pedidoFinalizado{
     margin-left: 5px;
     text-align: left;
   }
   .lista-p1{
+    text-align: center;
+    font-size: 20px;
+}
+.lista-p2{
     text-align: left;
+    font-size: 20px;
 }
   
 /* FIM Carrinho*/

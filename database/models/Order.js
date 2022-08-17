@@ -31,6 +31,9 @@ module.exports = function(sequelize, dataTypes) {
         },
         preco: {
                 type: dataTypes.STRING
+        },
+        quantidade: {
+                type: dataTypes.INTEGER
     }
     };
 

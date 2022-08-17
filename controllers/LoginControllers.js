@@ -67,6 +67,26 @@ const LoginController = {
             return res.redirect('/login');
         }
     },
+    exclude: async (req, res) => {
+
+        const {id} = req.params;
+        console.log(id)    
+         
+    
+        const resultado = await db.Client.destroy({
+            where:{ id: id }
+        })
+         console.log(resultado)
+        return res.redirect('/')
+    
+    },
+    updateIndex: async (req, res) => {
+        let {id} = req.params;
+
+        
+
+        return res.render('editarLogado', id)
+    },
     logout: async (req, res) => {
         req.session.destroy();
         res.redirect('/login');

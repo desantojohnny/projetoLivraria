@@ -56,13 +56,10 @@
                         </div> -->
                         <div id="login-2">
                             <div class="icon-sacola">
-                                <img src="/images/sacola.png" alt="" sizes="" srcset="" width="30" height="30">
+                                <a href="http://localhost:3000/carrinhoPasso1"><img src="/images/sacola.png" alt="" sizes="" srcset="" width="30" height="30"></a>
                             </div>
                         </div>
-                        <div class= "menu-openner">
-                            <span>0</span>
-                            🛒
-                        </div>
+                        
                     </div>
                 </nav>
                 <nav id="geral">
@@ -94,7 +91,7 @@
     <section>
         <div class="box-cadastro1">
             <div class="cadastro">
-                <form action="/register" method="POST" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
+                <form action="/user/index/<%= client.id %>" method="get" class="formulario" id="formulario"> <!-- * Adicionado: action + method -->
                     <h1 class="header1">Olá <%= client.first_name %>!</h1>
                     <br>
                     <p class="header1">Seja bem vindo! Esta é a página do seu perfil</p></h4><br><br>
@@ -127,12 +124,18 @@
                         </div>
 
                         <div class="form-control">
+                            <label for="cpf" class="input-text-cadastro1"><b>Telefone: </b></label>
+                            <label for="cpf" class="input-text-cadastro1"><i><%= client.phone %>.</i></label>
+                            <br>
+                        </div>
+
+                        <div class="form-control">
                             <label for="email" class="input-text-cadastro1"><b>Email: </b></label><br>
                             <label for="email" class="input-text-cadastro1"><i><%=client.email_login %></i></label>
                             <br>
                         </div>
                     
-                        <a href="/user/index/<%= client.id %>"><button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">Editar</button></a>
+                        <button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">Editar</button>
                         <a href="/user/delete/<%= client.id %>"><button type="submit" value= "enviar"class="btn-cadastre-se-cadastro">Excluir</button></a>
                 </form>
             </div>

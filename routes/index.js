@@ -49,6 +49,11 @@ router.get('/', ProdutoController.searchHighlightsProducts);
 router.get('/login', LoginController.index);
 router.post('/login/register', validations, LoginController.submit);
 router.post('/login', LoginController.store);
+router.post('/user/delete/:id', LoginController.exclude);
+router.get('/user/index/:id', LoginController.updateIndex);
+router.post('/carrinho/update/:id', CarrinhoController.update);
+
+
 
 
 /* Todos os produtos - page */
@@ -58,7 +63,7 @@ router.get('/produtos', ProdutoController.searchAllProducts);
 router.get('/produto/:id', ProdutoController.productDetail);
 router.post('/add-produto-ao-carrinho/:id', ProdutoController.addToCart);
 router.post('/comprar-produto/:id', ProdutoController.shop);
-router.delete('/removeCart/:id', CarrinhoController.destroy);
+router.post('/removeCart/:id', CarrinhoController.destroy);
 
 
 
@@ -74,6 +79,8 @@ router.get('/endereco', EnderecoController.index);
 
 /* Página: Carrinho - Passo 1*/
 router.get('/carrinhoPasso1', auth, CarrinhoController.index);
+router.post('/carrinhoPasso1/:id', auth, CarrinhoController.index);
+
 
 /* Página: Carrinho - Passo 2*/
 router.get('/carrinhoPasso2', auth, CarrinhoPasso2Controller.index);

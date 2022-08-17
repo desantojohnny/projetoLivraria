@@ -1,5 +1,5 @@
 <%- include('header'); %>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     let num = 20.49;
     function id( el ){
             return document.getElementById( el );
@@ -18,7 +18,7 @@
                     id('total').value = num*id('format').value;
             }
     }       
-</script>
+</script> -->
 
 <section class="carrinhoPasso1-section">
     <div class="container-Passo1">
@@ -40,13 +40,16 @@
                         <div>
                             <div>
                                 <input type="button" name="menos" id="menos" value="-" />
-                                <input type="text" name="format" value="0" id="format" size="1">
-                                <input type="button" name="mais" id="mais" value="+" />
+                                <input type="text" name="format" value="<%=order.quantidade%>" id="format" size="1">
+                                <form action="/carrinho/update/<%=order.id%>" method="POST">
+                                    <input type="submit" name="mais" id="mais" value="+" />
+                                    <input type="readonly" name="newValue" style="display: none;" value="<%= order.quantidade+1 %>">
+                                </form>
                             </div>
                         </div>
                         
                             <div>
-                                <form action="/removeCart/<%= order.id %>?_method=DELETE" method="post">
+                                <form action="/removeCart/<%= order.id %>" method="post">
                                     <button type="submit" class="btn-passo1-cont-1">Remover</button>
                                 </form>
                             </div>

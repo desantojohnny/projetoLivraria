@@ -140,7 +140,7 @@ const ProdutoController = {
             })
              console.log(resultado)
             return res.redirect('/')
-        // }
+        
     }
 };
 
